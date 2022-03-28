@@ -31,14 +31,14 @@ namespace appli_groupe
         {
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvB = new System.Windows.Forms.DataGridView();
             this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Longueur = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.largueur = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vitesse = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passagers = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.voitures = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvB)).BeginInit();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -64,21 +64,21 @@ namespace appli_groupe
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
+            // dgvB
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nom,
             this.Longueur,
             this.largueur,
             this.vitesse,
             this.passagers,
             this.voitures});
-            this.dataGridView1.Location = new System.Drawing.Point(9, 148);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(642, 135);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvB.Location = new System.Drawing.Point(9, 148);
+            this.dgvB.Name = "dgvB";
+            this.dgvB.RowTemplate.Height = 25;
+            this.dgvB.Size = new System.Drawing.Size(642, 135);
+            this.dgvB.TabIndex = 3;
             // 
             // nom
             // 
@@ -115,14 +115,14 @@ namespace appli_groupe
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(700, 338);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvB);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvB)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,7 +131,7 @@ namespace appli_groupe
         #endregion
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvB;
         private System.Windows.Forms.DataGridViewTextBoxColumn nom;
         private System.Windows.Forms.DataGridViewTextBoxColumn Longueur;
         private System.Windows.Forms.DataGridViewTextBoxColumn largueur;
