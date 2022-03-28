@@ -21,5 +21,27 @@ namespace appli_groupe
         {
             Bateau b1 = new Bateau("tt", 9.5, 9.5, 90, 50, 6);
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+       
+            
+      
+
+        private void button1_Click_1(object sender, EventArgs e)
+
+        {
+
+
+            for (int i = 0; i < 5; i++)
+            {
+
+                tableauBateau.Rows.Add(b1.getNom(), b1.getLongueur(), b1.getLargeur(), b1.getVitesse(), b1.getNbPassagers(), b1.getNbVoitures());
+            }
+
+        }
     }
 }
