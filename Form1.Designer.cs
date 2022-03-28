@@ -38,6 +38,7 @@ namespace appli_groupe
             this.vitesse = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passagers = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.voitures = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbBateau = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvB)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,11 +111,21 @@ namespace appli_groupe
             this.voitures.HeaderText = "voiture";
             this.voitures.Name = "voitures";
             // 
+            // cbBateau
+            // 
+            this.cbBateau.FormattingEnabled = true;
+            this.cbBateau.Location = new System.Drawing.Point(31, 318);
+            this.cbBateau.Name = "cbBateau";
+            this.cbBateau.Size = new System.Drawing.Size(177, 23);
+            this.cbBateau.TabIndex = 4;
+            this.cbBateau.Text = "choisir un bateau a modifier";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 338);
+            this.ClientSize = new System.Drawing.Size(1481, 677);
+            this.Controls.Add(this.cbBateau);
             this.Controls.Add(this.dgvB);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox1);
@@ -138,6 +149,7 @@ namespace appli_groupe
         private System.Windows.Forms.DataGridViewTextBoxColumn vitesse;
         private System.Windows.Forms.DataGridViewTextBoxColumn passagers;
         private System.Windows.Forms.DataGridViewTextBoxColumn voitures;
+        private System.Windows.Forms.ComboBox cbBateau;
     }
 }
 
