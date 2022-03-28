@@ -7,11 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace appli_groupe
 {
     public partial class Form1 : Form
     {
+       
+
+        Bateau bateau1;
+        Bateau bateau2;
+        Bateau bateau3;
+        Bateau bateau4;
+        Bateau bateau5;
+        Bateau bateau6;
+        Port port1;
+        Port port2;
+        Port port3;
+        Port port4;
+        Port port5;
+        Port port6;
+        ArrayList bateau;
         public Form1()
         {
             InitializeComponent();
@@ -40,6 +56,16 @@ namespace appli_groupe
         private void button1_Click_1(object sender,EventArgs e)
         {
 
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+
+            for (int i =0; i < bateau.Count ; i++)
+            {
+                
+                bateauAffichage.Rows.Add(bateau.Get(i).getNom);
+            }
         }
     }
 }
