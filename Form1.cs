@@ -11,7 +11,7 @@ using System.Collections;
 
 namespace appli_groupe
 {
-    public partial class Form1 : Form
+    public partial class cbbateau : Form
     {
        
 
@@ -28,7 +28,7 @@ namespace appli_groupe
         Port port5;
         Port port6;
         List <Bateau> bateau ;
-        public Form1()
+        public cbbateau()
         {
             InitializeComponent();
         }
@@ -76,6 +76,20 @@ namespace appli_groupe
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int bateauchoix = comboBox1.SelectedIndex;
+            bateauchoix = bateauchoix + 1;
+            txNom.Text = bateau.ElementAt(bateauchoix).getNom();
+            txLargeur.Text = bateau.ElementAt(bateauchoix).getLargeur().ToString();
+            txLongeur.Text = bateau.ElementAt(bateauchoix).getLongueur().ToString();
+            txPassager.Text = bateau.ElementAt(bateauchoix).getNbPassagers().ToString();
+            txVitesse.Text = bateau.ElementAt(bateauchoix).getVitesse().ToString();
+            txVoiture.Text = bateau.ElementAt(bateauchoix).getNbVoitures().ToString();
+            
+            
         }
     }
 }
