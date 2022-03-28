@@ -79,7 +79,7 @@ namespace appli_groupe
             this.tableauBateau.RowTemplate.Height = 25;
             this.tableauBateau.Size = new System.Drawing.Size(642, 161);
             this.tableauBateau.TabIndex = 2;
-            this.tableauBateau.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            
             // 
             // nom
             // 
