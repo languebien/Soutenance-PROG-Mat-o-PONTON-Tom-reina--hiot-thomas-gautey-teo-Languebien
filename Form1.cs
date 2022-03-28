@@ -27,7 +27,7 @@ namespace appli_groupe
         Port port4;
         Port port5;
         Port port6;
-        ArrayList bateau;
+        List <Bateau> bateau ;
         public Form1()
         {
             InitializeComponent();
@@ -47,6 +47,8 @@ namespace appli_groupe
             port4 = new Port("CheesyCheedarPort");
             port5 = new Port("SoiréeMariePort");
             port6 = new Port("FatRacoonCity");
+            bateau = new List<Bateau>();
+            bateau.Add(bateau1);
             bateau.Add(bateau1);
             bateau.Add(bateau2);
             bateau.Add(bateau3);
@@ -65,7 +67,7 @@ namespace appli_groupe
         {
             for (int i = 0; i < bateau.Count; i++)
             {
-
+                dgvB.Rows.Add(bateau.ElementAt(i).getNom(),bateau.ElementAt(i).getLongueur(), bateau.ElementAt(i).getLargeur(), bateau.ElementAt(i).getVitesse(), bateau.ElementAt(i).getNbPassagers(), bateau.ElementAt(i).getNbVoitures()) ;
 
             }
 
