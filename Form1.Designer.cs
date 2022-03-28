@@ -30,15 +30,7 @@ namespace appli_groupe
         private void InitializeComponent()
         {
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.bateauAffichage = new System.Windows.Forms.DataGridView();
-            this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Longueur = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Largeur = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vitesse = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Personnes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vehicule = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.bateauAffichage)).BeginInit();
+           
             this.SuspendLayout();
             // 
             // checkBox1
@@ -52,80 +44,19 @@ namespace appli_groupe
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "E ce que git marche";
             this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // bateauAffichage
-            // 
-            this.bateauAffichage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bateauAffichage.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nom,
-            this.Longueur,
-            this.Largeur,
-            this.vitesse,
-            this.Personnes,
-            this.vehicule});
-            this.bateauAffichage.Location = new System.Drawing.Point(60, 208);
-            this.bateauAffichage.Name = "bateauAffichage";
-            this.bateauAffichage.RowTemplate.Height = 25;
-            this.bateauAffichage.Size = new System.Drawing.Size(642, 176);
-            this.bateauAffichage.TabIndex = 2;
-            // 
-            // nom
-            // 
-            this.nom.HeaderText = "nom";
-            this.nom.MinimumWidth = 6;
-            this.nom.Name = "nom";
-            this.nom.Width = 125;
-            // 
-            // Longueur
-            // 
-            this.longueur.HeaderText = "longueur";
-            this.longueur.Name = "longueur";
-            // 
-            // Largeur
-            // 
-            this.largeur.HeaderText = "largeur";
-            this.largeur.Name = "largeur";
-            // 
-            // vitesse
-            // 
-            this.vitesse.HeaderText = "vitesse";
-            this.vitesse.Name = "vitesse";
-            this.vitesse.Width = 125;
-            // 
-            // Personnes
-            // 
-            this.personne.HeaderText = "personne";
-            this.personne.Name = "personne";
-            // 
-            // vehicule
-            // 
-            this.vehicule.HeaderText = "vehicule";
-            this.vehicule.MinimumWidth = 6;
-            this.vehicule.Name = "vehicule";
-            this.vehicule.Width = 125;
-            // 
-            // btn1
-            // 
-            this.button1.Location = new System.Drawing.Point(512, 109);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btn1);
-            this.Controls.Add(this.bateauAffichage);
+         
             this.Controls.Add(this.checkBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bateauAffichage)).EndInit();
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,14 +67,7 @@ namespace appli_groupe
        
         
       
-        private System.Windows.Forms.DataGridView bateauAffichage;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nom;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Longueur;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Largeur;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vitesse;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Personnes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vehicule;
-        private System.Windows.Forms.Button btn1;
+    
     }
 }
 
