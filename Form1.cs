@@ -59,17 +59,22 @@ namespace appli_groupe
             DateTime datetraverser2 = new DateTime(2022, 12, 25);
             Traversee RacoonVoyage = new Traversee(69, datetraverser1, 2, port6, port4);
             Traversee TripleCheesePlusCheedar = new Traversee(11, datetraverser1, 2, port2, port5);
+
+            // Boucle qui ajoute les bateaux
+            for (int i = 0; i < bateau.Count; i++)
+            {
+                dgvB.Rows.Add(bateau.ElementAt(i).getNom(), bateau.ElementAt(i).getLongueur(), bateau.ElementAt(i).getLargeur(), bateau.ElementAt(i).getVitesse(), bateau.ElementAt(i).getNbPassagers(), bateau.ElementAt(i).getNbVoitures());
+
+            }
         }
-        
-        
 
         private void button1_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < bateau.Count; i++)
-            {
-                dgvB.Rows.Add(bateau.ElementAt(i).getNom(),bateau.ElementAt(i).getLongueur(), bateau.ElementAt(i).getLargeur(), bateau.ElementAt(i).getVitesse(), bateau.ElementAt(i).getNbPassagers(), bateau.ElementAt(i).getNbVoitures()) ;
+            
+        }
 
-            }
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
 
         }
     }
