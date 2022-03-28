@@ -41,16 +41,6 @@ namespace appli_groupe
             ((System.ComponentModel.ISupportInitialize)(this.tableauBateau)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(353, 376);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(549, 211);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
@@ -76,44 +66,57 @@ namespace appli_groupe
             this.vehicule});
             this.tableauBateau.Location = new System.Drawing.Point(56, 277);
             this.tableauBateau.Name = "tableauBateau";
+            this.tableauBateau.RowHeadersWidth = 51;
             this.tableauBateau.RowTemplate.Height = 25;
             this.tableauBateau.Size = new System.Drawing.Size(642, 161);
             this.tableauBateau.TabIndex = 2;
-            
             // 
             // nom
             // 
             this.nom.HeaderText = "nom";
+            this.nom.MinimumWidth = 6;
             this.nom.Name = "nom";
+            this.nom.Width = 125;
             // 
             // longueur
             // 
             this.longueur.HeaderText = "longueur";
+            this.longueur.MinimumWidth = 6;
             this.longueur.Name = "longueur";
+            this.longueur.Width = 125;
             // 
             // largeur
             // 
             this.largeur.HeaderText = "largeur";
+            this.largeur.MinimumWidth = 6;
             this.largeur.Name = "largeur";
+            this.largeur.Width = 125;
             // 
             // vitesse
             // 
             this.vitesse.HeaderText = "vitesse";
+            this.vitesse.MinimumWidth = 6;
             this.vitesse.Name = "vitesse";
+            this.vitesse.Width = 125;
             // 
             // personne
             // 
             this.personne.HeaderText = "personne";
+            this.personne.MinimumWidth = 6;
             this.personne.Name = "personne";
+            this.personne.Width = 125;
             // 
             // vehicule
             // 
             this.vehicule.HeaderText = "vehicule";
+            this.vehicule.MinimumWidth = 6;
             this.vehicule.Name = "vehicule";
+            this.vehicule.Width = 125;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(512, 109);
+            this.button1.Location = new System.Drawing.Point(561, 203);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
