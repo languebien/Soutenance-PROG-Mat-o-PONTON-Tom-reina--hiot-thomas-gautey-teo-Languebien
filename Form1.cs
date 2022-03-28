@@ -88,7 +88,7 @@ namespace appli_groupe
             txPassager.Text = bateau.ElementAt(bateauchoix).getNbPassagers().ToString();
             txVitesse.Text = bateau.ElementAt(bateauchoix).getVitesse().ToString();
             txVoiture.Text = bateau.ElementAt(bateauchoix).getNbVoitures().ToString();
-            
+            txvisite.Text = bateau.ElementAt(bateauchoix).getDateVisite().ToString();
             
         }
     }

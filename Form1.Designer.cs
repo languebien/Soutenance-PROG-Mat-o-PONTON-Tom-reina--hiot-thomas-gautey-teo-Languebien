@@ -39,6 +39,7 @@ namespace appli_groupe
             this.txVitesse = new System.Windows.Forms.TextBox();
             this.txLargeur = new System.Windows.Forms.TextBox();
             this.info = new System.Windows.Forms.GroupBox();
+            this.txvisite = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvB)).BeginInit();
             this.info.SuspendLayout();
             this.SuspendLayout();
@@ -162,6 +163,7 @@ namespace appli_groupe
             // 
             // info
             // 
+            this.info.Controls.Add(this.txvisite);
             this.info.Controls.Add(this.txNom);
             this.info.Controls.Add(this.txVoiture);
             this.info.Controls.Add(this.txPassager);
@@ -170,10 +172,17 @@ namespace appli_groupe
             this.info.Controls.Add(this.txLongeur);
             this.info.Location = new System.Drawing.Point(15, 230);
             this.info.Name = "info";
-            this.info.Size = new System.Drawing.Size(119, 211);
+            this.info.Size = new System.Drawing.Size(119, 225);
             this.info.TabIndex = 11;
             this.info.TabStop = false;
             this.info.Text = "info bateau";
+            // 
+            // txvisite
+            // 
+            this.txvisite.Location = new System.Drawing.Point(0, 196);
+            this.txvisite.Name = "txvisite";
+            this.txvisite.Size = new System.Drawing.Size(100, 23);
+            this.txvisite.TabIndex = 12;
             // 
             // cbbateau
             // 
@@ -210,6 +219,7 @@ namespace appli_groupe
         private System.Windows.Forms.TextBox txLargeur;
         private System.Windows.Forms.GroupBox info;
         private System.Windows.Forms.TextBox txVitesse;
+        private System.Windows.Forms.TextBox txvisite;
     }
 }
 
