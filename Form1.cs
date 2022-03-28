@@ -19,6 +19,8 @@ namespace appli_groupe
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            DateTime datetraverser1 = new DateTime(2025, 12, 25);
+            DateTime datetraverser2 = new DateTime(2022, 12, 25);
             Bateau bateau1 = new Bateau("BigBoobs", 9.5, 9.5, 90, 50, 6);
             Bateau bateau2 = new Bateau("FatFlyingRacoon", 9.5, 9.5, 90, 50, 6);
             Bateau bateau3 = new Bateau("FatDrumandBassRacoon", 9.5, 9.5, 90, 50, 6);
@@ -31,6 +33,8 @@ namespace appli_groupe
             Port port4 = new Port("CheesyCheedarPort");
             Port port5 = new Port("SoiréeMariePort");
             Port port6 = new Port("FatRacoonCity");
+            Traversee RacoonVoyage = new Traversee(69, datetraverser1, 2, port6, port4);
+            Traversee TripleCheesePlusCheedar = new Traversee(11, datetraverser1, 2, port2, port5);
         }
         
         private void button1_Click_1(object sender,EventArgs e)
