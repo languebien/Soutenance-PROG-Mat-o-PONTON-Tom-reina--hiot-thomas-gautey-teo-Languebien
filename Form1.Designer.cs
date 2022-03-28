@@ -137,22 +137,15 @@ namespace appli_groupe
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.modifierBateaux);
-            this.groupBox2.Location = new System.Drawing.Point(6, 128);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(805, 173);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Modifier les Bateaux";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1294, 711);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(700, 338);
+            this.Controls.Add(this.dgvB);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.checkBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -172,10 +165,6 @@ namespace appli_groupe
         private System.Windows.Forms.DataGridViewTextBoxColumn vitesse;
         private System.Windows.Forms.DataGridViewTextBoxColumn passagers;
         private System.Windows.Forms.DataGridViewTextBoxColumn voitures;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox modifierBateaux;
     }
 }
 
