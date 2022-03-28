@@ -17,5 +17,9 @@ namespace appli_groupe
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Bateau b1 = new Bateau("tt", 9.5, 9.5, 90, 50, 6);
+        }
     }
 }
