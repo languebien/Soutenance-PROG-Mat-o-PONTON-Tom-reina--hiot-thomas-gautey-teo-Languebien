@@ -15,9 +15,11 @@ namespace appli_groupe
             nom = unNom;
         }
 
-        public string getNom()
+        public string getNomPort()
         {
             return nom;
         }
+
+        
     }
 }
