@@ -59,19 +59,16 @@ namespace appli_groupe
             Traversee TripleCheesePlusCheedar = new Traversee(11, datetraverser1, 2, port2, port5);
         }
         
-        private void button1_Click_1(object sender,EventArgs e)
+        
+
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btn1_Click(object sender, EventArgs e)
-        {
-
-            for (int i =0; i < bateau.Count ; i++)
+            for (int i = 0; i < bateau.Count; i++)
             {
-                
-                bateauAffichage.Rows.Add(bateau.Get(i).getNom);
+
+
             }
+
         }
     }
 }
