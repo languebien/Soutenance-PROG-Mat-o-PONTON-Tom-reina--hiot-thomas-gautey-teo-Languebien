@@ -114,6 +114,13 @@ namespace appli_groupe
             // cbBateau
             // 
             this.cbBateau.FormattingEnabled = true;
+            this.cbBateau.Items.AddRange(new object[] {
+            "BigBoobs",
+            "FatFlyingRacoon",
+            "DatDrumandBassRacoon",
+            "mouse",
+            "chocolatine",
+            "casanobile"});
             this.cbBateau.Location = new System.Drawing.Point(31, 318);
             this.cbBateau.Name = "cbBateau";
             this.cbBateau.Size = new System.Drawing.Size(177, 23);
