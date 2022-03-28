@@ -36,13 +36,7 @@ namespace appli_groupe
             this.vitesse = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passagers = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.voitures = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.modifierBateaux = new System.Windows.Forms.ComboBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvB)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvB
@@ -55,12 +49,11 @@ namespace appli_groupe
             this.vitesse,
             this.passagers,
             this.voitures});
-            this.dgvB.Location = new System.Drawing.Point(6, 27);
-            this.dgvB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dgvB.Location = new System.Drawing.Point(5, 20);
             this.dgvB.Name = "dgvB";
             this.dgvB.RowHeadersWidth = 51;
             this.dgvB.RowTemplate.Height = 25;
-            this.dgvB.Size = new System.Drawing.Size(805, 94);
+            this.dgvB.Size = new System.Drawing.Size(822, 174);
             this.dgvB.TabIndex = 3;
             // 
             // nom
@@ -105,55 +98,18 @@ namespace appli_groupe
             this.voitures.Name = "voitures";
             this.voitures.Width = 125;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 23);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Compagnie Océane";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.dgvB);
-            this.groupBox1.Location = new System.Drawing.Point(12, 44);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1068, 350);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Bateaux";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // modifierBateaux
-            // 
-            this.modifierBateaux.FormattingEnabled = true;
-            this.modifierBateaux.Location = new System.Drawing.Point(6, 26);
-            this.modifierBateaux.Name = "modifierBateaux";
-            this.modifierBateaux.Size = new System.Drawing.Size(297, 28);
-            this.modifierBateaux.TabIndex = 4;
-            // 
-            // groupBox2
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 338);
+            this.ClientSize = new System.Drawing.Size(1175, 434);
             this.Controls.Add(this.dgvB);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvB)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
