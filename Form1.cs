@@ -108,10 +108,7 @@ namespace appli_groupe
 
         private void txvisite_TextChanged(object sender, EventArgs e)
         {
-                int bateauchoix = comboBox1.SelectedIndex;
-                bateauchoix = bateauchoix + 1;
-
-                bateau.ElementAt(bateauchoix).setDateVisite(DateTime.Parse(dateTraverseeBateau.Text));
+                
         }
 
         private void modifierDateTraverseeBateau_Click(object sender, EventArgs e)
