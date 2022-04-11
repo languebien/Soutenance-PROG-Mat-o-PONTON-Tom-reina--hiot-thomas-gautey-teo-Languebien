@@ -183,6 +183,7 @@ namespace appli_groupe
             this.txvisite.Name = "txvisite";
             this.txvisite.Size = new System.Drawing.Size(100, 23);
             this.txvisite.TabIndex = 12;
+            this.txvisite.TextChanged += new System.EventHandler(this.txvisite_TextChanged);
             // 
             // cbbateau
             // 

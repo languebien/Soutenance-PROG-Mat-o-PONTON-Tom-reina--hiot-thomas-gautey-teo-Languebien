@@ -55,6 +55,13 @@ namespace appli_groupe
             bateau.Add(bateau4);
             bateau.Add(bateau5);
             bateau.Add(bateau6);
+            DateTime datebateau = new DateTime(2020, 06, 06);
+            bateau1.setDateVisite(datebateau);
+            bateau2.setDateVisite(datebateau);
+            bateau3.setDateVisite(datebateau);
+            bateau4.setDateVisite(datebateau);
+            bateau5.setDateVisite(datebateau);
+            bateau6.setDateVisite(datebateau);
             DateTime datetraverser1 = new DateTime(2025, 12, 25);
             DateTime datetraverser2 = new DateTime(2022, 12, 25);
             Traversee RacoonVoyage = new Traversee(69, datetraverser1, 2, port6, port4);
@@ -83,12 +90,32 @@ namespace appli_groupe
             int bateauchoix = comboBox1.SelectedIndex;
             bateauchoix = bateauchoix + 1;
             txNom.Text = bateau.ElementAt(bateauchoix).getNom();
+            txNom.Enabled = false;
             txLargeur.Text = bateau.ElementAt(bateauchoix).getLargeur().ToString();
+            txLargeur.Enabled = false;
             txLongeur.Text = bateau.ElementAt(bateauchoix).getLongueur().ToString();
+            txLongeur.Enabled = false;
             txPassager.Text = bateau.ElementAt(bateauchoix).getNbPassagers().ToString();
+            txPassager.Enabled = false;
             txVitesse.Text = bateau.ElementAt(bateauchoix).getVitesse().ToString();
+            txVitesse.Enabled=false;
             txVoiture.Text = bateau.ElementAt(bateauchoix).getNbVoitures().ToString();
+            txVoiture.Enabled = false;
             txvisite.Text = bateau.ElementAt(bateauchoix).getDateVisite().ToString();
+
+            
+        }
+
+        private void txvisite_TextChanged(object sender, EventArgs e)
+        {
+           
+            
+            
+
+                int bateauchoix = comboBox1.SelectedIndex;
+                bateauchoix = bateauchoix + 1;
+
+                bateau.ElementAt(bateauchoix).setDateVisite(DateTime.Parse(txvisite.Text));
             
         }
     }
