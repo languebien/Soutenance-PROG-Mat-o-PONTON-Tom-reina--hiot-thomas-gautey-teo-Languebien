@@ -35,18 +35,18 @@ namespace appli_groupe
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            bateau1 = new Bateau("BigBoobs", 9.5, 9.5, 90, 50, 6);
-            bateau2 = new Bateau("FatFlyingRacoon", 9.5, 9.5, 90, 50, 6);
-            bateau3 = new Bateau("FatDrumandBassRacoon", 9.5, 9.5, 90, 50, 6);
+            bateau1 = new Bateau("Ultra Fat Raccoon", 9.5, 9.5, 90, 50, 6);
+            bateau2 = new Bateau("Fat Flying Racoon", 9.5, 9.5, 90, 50, 6);
+            bateau3 = new Bateau("Fat Drum & Bass Raccoon", 9.5, 9.5, 90, 50, 6);
             bateau4 = new Bateau("MOUSE", 9.5, 9.5, 90, 50, 6);
             bateau5 = new Bateau("Chocolatine", 9.5, 9.5, 90, 50, 6);
             bateau6 = new Bateau("CasaNobile", 9.5, 9.5, 90, 50, 6);
-            port1 = new Port("CreamyPort");
-            port2 = new Port("RacoonPort");
-            port3 = new Port("CreaspyBaconPort");
-            port4 = new Port("CheesyCheedarPort");
-            port5 = new Port("SoiréeMariePort");
-            port6 = new Port("FatRacoonCity");
+            port1 = new Port("Creamy Port");
+            port2 = new Port("Racoon Port");
+            port3 = new Port("Creaspy Bacon Port");
+            port4 = new Port("Cheesy Cheedar Port");
+            port5 = new Port("Soirée Marie Port");
+            port6 = new Port("Fat Racoon City");
             bateau = new List<Bateau>();
             bateau.Add(bateau1);
             bateau.Add(bateau1);
@@ -74,17 +74,6 @@ namespace appli_groupe
 
             }
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             int bateauchoix = comboBox1.SelectedIndex;
@@ -102,21 +91,30 @@ namespace appli_groupe
             txVoiture.Text = bateau.ElementAt(bateauchoix).getNbVoitures().ToString();
             txVoiture.Enabled = false;
             dateTraverseeBateau.Text = bateau.ElementAt(bateauchoix).getDateVisite().ToString();
-
-            
         }
-
-        private void txvisite_TextChanged(object sender, EventArgs e)
-        {
-                
-        }
-
         private void modifierDateTraverseeBateau_Click(object sender, EventArgs e)
         {
             int bateauchoix = comboBox1.SelectedIndex;
             bateauchoix = bateauchoix + 1;
             string theDate = dateTraverseeBateau.Value.ToShortDateString();
             bateau.ElementAt(bateauchoix).setDateVisite(DateTime.Parse(dateTraverseeBateau.Text));
+        }
+
+
+
+        // P O U B E L L E
+        private void txvisite_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

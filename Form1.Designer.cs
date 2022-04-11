@@ -51,9 +51,15 @@ namespace appli_groupe
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.Wrapper = new System.Windows.Forms.TabControl();
+            this.billetterie = new System.Windows.Forms.TabPage();
+            this.traversees = new System.Windows.Forms.TabPage();
+            this.bateaux = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.dgvB)).BeginInit();
             this.info.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.Wrapper.SuspendLayout();
+            this.bateaux.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvB
@@ -302,7 +308,7 @@ namespace appli_groupe
             // 
             this.groupBox1.Controls.Add(this.dgvB);
             this.groupBox1.Controls.Add(this.info);
-            this.groupBox1.Location = new System.Drawing.Point(12, 40);
+            this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(667, 370);
             this.groupBox1.TabIndex = 12;
@@ -319,13 +325,56 @@ namespace appli_groupe
             this.label1.TabIndex = 13;
             this.label1.Text = "Compagnie Océane";
             // 
+            // Wrapper
+            // 
+            this.Wrapper.Controls.Add(this.billetterie);
+            this.Wrapper.Controls.Add(this.traversees);
+            this.Wrapper.Controls.Add(this.bateaux);
+            this.Wrapper.Location = new System.Drawing.Point(12, 40);
+            this.Wrapper.Multiline = true;
+            this.Wrapper.Name = "Wrapper";
+            this.Wrapper.SelectedIndex = 0;
+            this.Wrapper.Size = new System.Drawing.Size(1346, 586);
+            this.Wrapper.TabIndex = 14;
+            // 
+            // billetterie
+            // 
+            this.billetterie.Location = new System.Drawing.Point(4, 29);
+            this.billetterie.Name = "billetterie";
+            this.billetterie.Padding = new System.Windows.Forms.Padding(3);
+            this.billetterie.Size = new System.Drawing.Size(629, 190);
+            this.billetterie.TabIndex = 1;
+            this.billetterie.Text = "Billeterie";
+            this.billetterie.UseVisualStyleBackColor = true;
+            // 
+            // traversees
+            // 
+            this.traversees.Location = new System.Drawing.Point(4, 29);
+            this.traversees.Name = "traversees";
+            this.traversees.Padding = new System.Windows.Forms.Padding(3);
+            this.traversees.Size = new System.Drawing.Size(629, 190);
+            this.traversees.TabIndex = 2;
+            this.traversees.Text = "Traversées";
+            this.traversees.UseVisualStyleBackColor = true;
+            // 
+            // bateaux
+            // 
+            this.bateaux.Controls.Add(this.groupBox1);
+            this.bateaux.Location = new System.Drawing.Point(4, 29);
+            this.bateaux.Name = "bateaux";
+            this.bateaux.Padding = new System.Windows.Forms.Padding(3);
+            this.bateaux.Size = new System.Drawing.Size(1338, 553);
+            this.bateaux.TabIndex = 3;
+            this.bateaux.Text = "Bateaux";
+            this.bateaux.UseVisualStyleBackColor = true;
+            // 
             // cbbateau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1675, 883);
+            this.Controls.Add(this.Wrapper);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.groupBox1);
             this.Name = "cbbateau";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -333,6 +382,8 @@ namespace appli_groupe
             this.info.ResumeLayout(false);
             this.info.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.Wrapper.ResumeLayout(false);
+            this.bateaux.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -366,6 +417,10 @@ namespace appli_groupe
         private System.Windows.Forms.Button modifierDateTraverseeBateau;
         private System.Windows.Forms.DateTimePicker dateTraverseeBateau;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TabControl Wrapper;
+        private System.Windows.Forms.TabPage billetterie;
+        private System.Windows.Forms.TabPage traversees;
+        private System.Windows.Forms.TabPage bateaux;
     }
 }
 
