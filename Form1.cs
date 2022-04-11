@@ -101,22 +101,25 @@ namespace appli_groupe
             txVitesse.Enabled=false;
             txVoiture.Text = bateau.ElementAt(bateauchoix).getNbVoitures().ToString();
             txVoiture.Enabled = false;
-            txvisite.Text = bateau.ElementAt(bateauchoix).getDateVisite().ToString();
+            dateTraverseeBateau.Text = bateau.ElementAt(bateauchoix).getDateVisite().ToString();
 
             
         }
 
         private void txvisite_TextChanged(object sender, EventArgs e)
         {
-           
-            
-            
-
                 int bateauchoix = comboBox1.SelectedIndex;
                 bateauchoix = bateauchoix + 1;
 
-                bateau.ElementAt(bateauchoix).setDateVisite(DateTime.Parse(txvisite.Text));
-            
+                bateau.ElementAt(bateauchoix).setDateVisite(DateTime.Parse(dateTraverseeBateau.Text));
+        }
+
+        private void modifierDateTraverseeBateau_Click(object sender, EventArgs e)
+        {
+            int bateauchoix = comboBox1.SelectedIndex;
+            bateauchoix = bateauchoix + 1;
+            string theDate = dateTraverseeBateau.Value.ToShortDateString();
+            bateau.ElementAt(bateauchoix).setDateVisite(DateTime.Parse(dateTraverseeBateau.Text));
         }
     }
 }
