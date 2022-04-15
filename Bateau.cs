@@ -32,38 +32,38 @@ namespace appli_groupe
             dateProchaineVisite = uneDate;
         }
 
-        public string getNom()
+        public String getNomBateau()
         {
-            return nom;
+            return this.nom;
         }
 
         public double getLongueur()
         {
-            return longueur;
+            return this.longueur;
         }
 
         public double getLargeur()
         {
-            return largeur;
+            return this.largeur;
         }
         public double getVitesse()
         {
-            return vitesse;
+            return this.vitesse;
         }
 
         public int getNbPassagers()
         {
-            return nbPassagers;
+            return this.nbPassagers;
         }
 
         public int getNbVoitures()
         {
-            return nbVoitures;
+            return this.nbVoitures;
         }
 
         public DateTime getDateVisite()
         {
-            return dateProchaineVisite;
+            return this.dateProchaineVisite;
         }
 
     }

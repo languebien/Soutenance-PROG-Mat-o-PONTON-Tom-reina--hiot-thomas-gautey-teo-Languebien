@@ -13,8 +13,6 @@ namespace appli_groupe
 {
     public partial class cbbateau : Form
     {
-       
-
         Bateau bateau1;
         Bateau bateau2;
         Bateau bateau3;
@@ -25,9 +23,9 @@ namespace appli_groupe
         Port port2;
         Port port3;
         Port port4;
-        Port port5;
-        Port port6;
-        List <Bateau> bateau ;
+        List <Bateau> ListeBateau;
+        List <Traversee> ListeTraversees;
+        List <Port> ListePort;
         public cbbateau()
         {
             InitializeComponent();
@@ -35,26 +33,21 @@ namespace appli_groupe
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // B A T E A U X //
             bateau1 = new Bateau("Ultra Fat Raccoon", 9.5, 9.5, 90, 50, 6);
-            bateau2 = new Bateau("Fat Flying Racoon", 9.5, 9.5, 90, 50, 6);
-            bateau3 = new Bateau("Fat Drum & Bass Raccoon", 9.5, 9.5, 90, 50, 6);
-            bateau4 = new Bateau("MOUSE", 9.5, 9.5, 90, 50, 6);
-            bateau5 = new Bateau("Chocolatine", 9.5, 9.5, 90, 50, 6);
-            bateau6 = new Bateau("CasaNobile", 9.5, 9.5, 90, 50, 6);
-            port1 = new Port("Creamy Port");
-            port2 = new Port("Racoon Port");
-            port3 = new Port("Creaspy Bacon Port");
-            port4 = new Port("Cheesy Cheedar Port");
-            port5 = new Port("Soirée Marie Port");
-            port6 = new Port("Fat Racoon City");
-            bateau = new List<Bateau>();
-            bateau.Add(bateau1);
-            bateau.Add(bateau1);
-            bateau.Add(bateau2);
-            bateau.Add(bateau3);
-            bateau.Add(bateau4);
-            bateau.Add(bateau5);
-            bateau.Add(bateau6);
+            bateau2 = new Bateau("Mega Moose", 9.5, 9.5, 90, 50, 6);
+            bateau3 = new Bateau("Cosmic Taco Whale", 9.5, 9.5, 90, 50, 6);
+            bateau4 = new Bateau("Baleine Géante", 9.5, 9.5, 90, 50, 6);
+            bateau5 = new Bateau("Sea Master", 9.5, 9.5, 90, 50, 6);
+            bateau6 = new Bateau("Enormous Megaloodoon with Pizza", 9.5, 9.5, 90, 50, 6);
+            ListeBateau = new List<Bateau>();
+            ListeBateau.Add(bateau1);
+            ListeBateau.Add(bateau1);
+            ListeBateau.Add(bateau2);
+            ListeBateau.Add(bateau3);
+            ListeBateau.Add(bateau4);
+            ListeBateau.Add(bateau5);
+            ListeBateau.Add(bateau6);
             DateTime datebateau = new DateTime(2020, 06, 06);
             bateau1.setDateVisite(datebateau);
             bateau2.setDateVisite(datebateau);
@@ -62,47 +55,99 @@ namespace appli_groupe
             bateau4.setDateVisite(datebateau);
             bateau5.setDateVisite(datebateau);
             bateau6.setDateVisite(datebateau);
+
+            // P O R T S //
+            port1 = new Port("Fat Raccoon City");
+            port2 = new Port("Mango Loco Plaja");
+            port3 = new Port("Ultra Cheese Megaloodoon");
+            port4 = new Port("Lyonzon");
+            ListePort = new List<Port>();
+            ListePort.Add(port1);
+            ListePort.Add(port2);
+            ListePort.Add(port3);
+            ListePort.Add(port4);
+
+            // T R A V E R S E E S //
             DateTime datetraverser1 = new DateTime(2025, 12, 25);
             DateTime datetraverser2 = new DateTime(2022, 12, 25);
-            Traversee RacoonVoyage = new Traversee(69, datetraverser1, 2, port6, port4);
-            Traversee TripleCheesePlusCheedar = new Traversee(11, datetraverser1, 2, port2, port5);
+            Traversee Traversee1 = new Traversee(69, datetraverser1, 2, 100, 20, bateau4, port4, port1);
+            Traversee Traversee2 = new Traversee(11, datetraverser1, 2, 150, 35, bateau6, port3, port2);
+            ListeTraversees = new List<Traversee>();
+            ListeTraversees.Add(Traversee1);
+            ListeTraversees.Add(Traversee2);
 
-            // Boucle qui ajoute les bateaux
-            for (int i = 0; i < bateau.Count; i++)
+            // A J O U T E   B A T E A U X   P A G E   B A T E A U X //
+            for (int i = 0; i < ListeBateau.Count; i++)
             {
-                dgvB.Rows.Add(bateau.ElementAt(i).getNom(), bateau.ElementAt(i).getLongueur(), bateau.ElementAt(i).getLargeur(), bateau.ElementAt(i).getVitesse(), bateau.ElementAt(i).getNbPassagers(), bateau.ElementAt(i).getNbVoitures());
+                dgvB.Rows.Add(ListeBateau.ElementAt(i).getNomBateau(), ListeBateau.ElementAt(i).getLongueur(), ListeBateau.ElementAt(i).getLargeur(), ListeBateau.ElementAt(i).getVitesse(), ListeBateau.ElementAt(i).getNbPassagers(), ListeBateau.ElementAt(i).getNbVoitures());
+            }
 
+            // A J O U T E   T R A V E R S E E S   P A G E   T R A V E R S E E S //
+            for (int i = 0; i < ListeTraversees.Count; i++)
+            {
+                affichageTraversees.Rows.Add(ListeTraversees.ElementAt(i).getNumerp(), ListeTraversees.ElementAt(i).getDateDepart(), ListeTraversees.ElementAt(i).getDuree(), ListeTraversees.ElementAt(i).getPortPassagers(), ListeTraversees.ElementAt(i).getPortVehicules(), ListeTraversees.ElementAt(i).getBateau().getNomBateau(), ListeTraversees.ElementAt(i).getPortDepart().getNomPort(), ListeTraversees.ElementAt(i).getPortArrivee().getNomPort());
+                affichageRechercheTraversee.Rows.Add(ListeTraversees.ElementAt(i).getNumerp(), ListeTraversees.ElementAt(i).getDateDepart(), ListeTraversees.ElementAt(i).getDuree(), ListeTraversees.ElementAt(i).getPortPassagers(), ListeTraversees.ElementAt(i).getPortVehicules(), ListeTraversees.ElementAt(i).getBateau().getNomBateau(), ListeTraversees.ElementAt(i).getPortDepart().getNomPort(), ListeTraversees.ElementAt(i).getPortArrivee().getNomPort());
+            }
+
+            // A J O U T E   T R A V E R S E E S   P A G E   B I L E E T S //
+            for (int i = 0; i < ListeTraversees.Count; i++)
+            {
+                selectionReservationTraversee.Rows.Add(ListeTraversees.ElementAt(i).getNumerp(), ListeTraversees.ElementAt(i).getDateDepart(), ListeTraversees.ElementAt(i).getDuree(), ListeTraversees.ElementAt(i).getPortPassagers(), ListeTraversees.ElementAt(i).getPortVehicules(), ListeTraversees.ElementAt(i).getBateau().getNomBateau(), ListeTraversees.ElementAt(i).getPortDepart().getNomPort(), ListeTraversees.ElementAt(i).getPortArrivee().getNomPort());
+            }
+
+            // B A T E A U X   -   Remplissage automatique des comboboxes bateaux //
+            // Bateaux // 
+            for (int i = 1; i < ListeBateau.Count; i++)
+            {
+                selectionModifierBateau.Items.Add(ListeBateau[i].getNomBateau().ToString());
+            }
+
+            // T R A V E R S E E S   -   Remplissage automatique des comboboxes Traversées //
+            // Bateaux // 
+            for (int i = 1; i < ListeBateau.Count; i++)
+            {
+                selectionBateauxCreation.Items.Add(ListeBateau[i].getNomBateau().ToString());
+            }
+            // Ports // 
+            for (int i = 1; i < ListePort.Count; i++)
+            {
+                selectionPortsDepartRecherche.Items.Add(ListePort[i].getNomPort().ToString());
+                selectionPortsArriveeRecherche.Items.Add(ListePort[i].getNomPort().ToString());
+                selectionPortsDepartCreation.Items.Add(ListePort[i].getNomPort().ToString());
+                selectionPortsArriveeCreation.Items.Add(ListePort[i].getNomPort().ToString());
+
+                reservationTraverseePortDepart.Items.Add(ListePort[i].getNomPort().ToString());
+                reservationTraverseePortArrivee.Items.Add(ListePort[i].getNomPort().ToString());
             }
         }
+
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int bateauchoix = comboBox1.SelectedIndex;
+            int bateauchoix = selectionModifierBateau.SelectedIndex;
             bateauchoix = bateauchoix + 1;
-            txNom.Text = bateau.ElementAt(bateauchoix).getNom();
+            txNom.Text = ListeBateau.ElementAt(bateauchoix).getNomBateau();
             txNom.Enabled = false;
-            txLargeur.Text = bateau.ElementAt(bateauchoix).getLargeur().ToString();
+            txLargeur.Text = ListeBateau.ElementAt(bateauchoix).getLargeur().ToString();
             txLargeur.Enabled = false;
-            txLongeur.Text = bateau.ElementAt(bateauchoix).getLongueur().ToString();
+            txLongeur.Text = ListeBateau.ElementAt(bateauchoix).getLongueur().ToString();
             txLongeur.Enabled = false;
-            txPassager.Text = bateau.ElementAt(bateauchoix).getNbPassagers().ToString();
+            txPassager.Text = ListeBateau.ElementAt(bateauchoix).getNbPassagers().ToString();
             txPassager.Enabled = false;
-            txVitesse.Text = bateau.ElementAt(bateauchoix).getVitesse().ToString();
+            txVitesse.Text = ListeBateau.ElementAt(bateauchoix).getVitesse().ToString();
             txVitesse.Enabled=false;
-            txVoiture.Text = bateau.ElementAt(bateauchoix).getNbVoitures().ToString();
+            txVoiture.Text = ListeBateau.ElementAt(bateauchoix).getNbVoitures().ToString();
             txVoiture.Enabled = false;
-            dateTraverseeBateau.Text = bateau.ElementAt(bateauchoix).getDateVisite().ToString();
+            dateTraverseeBateau.Text = ListeBateau.ElementAt(bateauchoix).getDateVisite().ToString();
         }
         private void modifierDateTraverseeBateau_Click(object sender, EventArgs e)
         {
-            int bateauchoix = comboBox1.SelectedIndex;
+            int bateauchoix = selectionModifierBateau.SelectedIndex;
             bateauchoix = bateauchoix + 1;
             string theDate = dateTraverseeBateau.Value.ToShortDateString();
-            bateau.ElementAt(bateauchoix).setDateVisite(DateTime.Parse(dateTraverseeBateau.Text));
+            ListeBateau.ElementAt(bateauchoix).setDateVisite(DateTime.Parse(dateTraverseeBateau.Text));
         }
 
-
-
-        // P O U B E L L E
+        // P O U B E L L E //
         private void txvisite_TextChanged(object sender, EventArgs e)
         {
 
@@ -115,6 +160,39 @@ namespace appli_groupe
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+        private void selectionPortsDepartRecherche_SelectedIndexChanged(object sender, EventArgs e)
+        { 
+            
+            for (int i = 0; i < ListeTraversees.Count; i++)
+            {
+                if (selectionPortsDepartRecherche.SelectedIndex.ToString() == ListeTraversees.ElementAt(i).getPortDepart().getNomPort())
+                {
+                    affichageRechercheTraversee.Rows.Add(ListeTraversees.ElementAt(i).getNumerp(), ListeTraversees.ElementAt(i).getDateDepart(), ListeTraversees.ElementAt(i).getDuree(), ListeTraversees.ElementAt(i).getPortPassagers(), ListeTraversees.ElementAt(i).getPortVehicules(), ListeTraversees.ElementAt(i).getBateau().getNomBateau(), selectionPortsDepartRecherche.SelectedIndex.ToString(), ListeTraversees.ElementAt(i).getPortArrivee().getNomPort());
+                    break;
+                }
+            }
+        }
+        private void selectionPortsArriveeRecherche_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void selectionPortsDepartCreation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void selectionPortsArriveeCreation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void boutonCreationTraversee_Click(object sender, EventArgs e)
+        {
+            String BateauSelectionne = selectionBateauxCreation.Text;
+            String PortDepart = selectionPortsDepartCreation.Text;
+            String PortArrivee = selectionPortsArriveeCreation.Text;
+
+            visuTraverseeCree.Rows.Add(BateauSelectionne, PortDepart, PortArrivee);
         }
     }
 }

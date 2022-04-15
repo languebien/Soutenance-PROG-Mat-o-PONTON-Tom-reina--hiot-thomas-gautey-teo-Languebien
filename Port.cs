@@ -12,12 +12,12 @@ namespace appli_groupe
 
         public Port(string unNom)
         {
-            nom = unNom;
+            this.nom = unNom;
         }
 
-        public string getNomPort()
+        public String getNomPort()
         {
-            return nom;
+            return this.nom;
         }
 
         

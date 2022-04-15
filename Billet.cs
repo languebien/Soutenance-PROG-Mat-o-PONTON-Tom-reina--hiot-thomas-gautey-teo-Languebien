@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace appli_groupe
-{
+{ 
     class Billet
     {
         public string nomClient;

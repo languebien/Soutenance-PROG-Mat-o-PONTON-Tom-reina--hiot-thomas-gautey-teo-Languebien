@@ -18,13 +18,14 @@ namespace appli_groupe
         private Port lePortDepart;
         private Port lePortArrivee;
 
-        public Traversee(int unNumero, DateTime uneDate,int uneDuree, Port unPortDep,Port unPortArr)
+        public Traversee(int unNumero, DateTime uneDate,int uneDuree, int desPassagers, int desVehicules, Bateau unBateau, Port unPortDep,Port unPortArr)
         {
             numero = unNumero;
             dateDepart = uneDate;
             duree = uneDuree;
-            nbPassagers = 0;
-            nbVehicules = 0;
+            nbPassagers = desPassagers;
+            nbVehicules = desVehicules;
+            leBateau = unBateau;
             lePortArrivee = unPortArr;
             lePortDepart = unPortDep;
 
@@ -44,7 +45,18 @@ namespace appli_groupe
         {
             return duree;
         }
-
+        public int getPortPassagers()
+        {
+            return nbPassagers;
+        }
+        public int getPortVehicules()
+        {
+            return nbVehicules;
+        }
+        public Bateau getBateau()
+        {
+            return leBateau;
+        }
         public Port getPortDepart()
         {
             return lePortDepart;
