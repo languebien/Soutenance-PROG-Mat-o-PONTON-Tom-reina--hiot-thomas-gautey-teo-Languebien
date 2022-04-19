@@ -86,7 +86,6 @@ namespace appli_groupe
             for (int i = 0; i < ListeTraversees.Count; i++)
             {
                 affichageTraversees.Rows.Add(ListeTraversees.ElementAt(i).getNumerp(), ListeTraversees.ElementAt(i).getDateDepart(), ListeTraversees.ElementAt(i).getDuree(), ListeTraversees.ElementAt(i).getPortPassagers(), ListeTraversees.ElementAt(i).getPortVehicules(), ListeTraversees.ElementAt(i).getBateau().getNomBateau(), ListeTraversees.ElementAt(i).getPortDepart().getNomPort(), ListeTraversees.ElementAt(i).getPortArrivee().getNomPort());
-                affichageRechercheTraversee.Rows.Add(ListeTraversees.ElementAt(i).getNumerp(), ListeTraversees.ElementAt(i).getDateDepart(), ListeTraversees.ElementAt(i).getDuree(), ListeTraversees.ElementAt(i).getPortPassagers(), ListeTraversees.ElementAt(i).getPortVehicules(), ListeTraversees.ElementAt(i).getBateau().getNomBateau(), ListeTraversees.ElementAt(i).getPortDepart().getNomPort(), ListeTraversees.ElementAt(i).getPortArrivee().getNomPort());
             }
 
             // A J O U T E   T R A V E R S E E S   P A G E   B I L E E T S //
@@ -146,6 +145,25 @@ namespace appli_groupe
             string theDate = dateTraverseeBateau.Value.ToShortDateString();
             ListeBateau.ElementAt(bateauchoix).setDateVisite(DateTime.Parse(dateTraverseeBateau.Text));
         }
+        private void recherche_Click(object sender, EventArgs e)
+        {
+            String depart = selectionPortsDepartRecherche.Text;
+            String arrivee = selectionPortsArriveeRecherche.Text;
+            String date = dtpTraversée.Value.ToShortDateString();
+
+            for (int i = 0; i < ListeTraversees.Count; i++)
+            {
+                String portD = (string)affichageTraversees[6, i].Value;
+                String portA = (string)affichageTraversees[7, i].Value;
+                DateTime portDate =(DateTime) affichageTraversees[1, i].Value;
+                
+                if (portD == depart & portA == arrivee & portDate.ToShortDateString() == date)
+                {
+                    affichageRechercheTraversee.Rows.Add(ListeTraversees.ElementAt(i).getNumerp(), ListeTraversees.ElementAt(i).getDateDepart(), ListeTraversees.ElementAt(i).getDuree(), ListeTraversees.ElementAt(i).getPortPassagers(), ListeTraversees.ElementAt(i).getPortVehicules(), ListeTraversees.ElementAt(i).getBateau().getNomBateau(), ListeTraversees.ElementAt(i).getPortDepart().getNomPort(), ListeTraversees.ElementAt(i).getPortArrivee().getNomPort());
+
+                }
+            }
+        }
 
         // P O U B E L L E //
         private void txvisite_TextChanged(object sender, EventArgs e)
@@ -193,6 +211,20 @@ namespace appli_groupe
             String PortArrivee = selectionPortsArriveeCreation.Text;
 
             visuTraverseeCree.Rows.Add(BateauSelectionne, PortDepart, PortArrivee);
+            
+           
         }
+
+        private void dtpTraversée_ValueChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void rechercheTraversee_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
