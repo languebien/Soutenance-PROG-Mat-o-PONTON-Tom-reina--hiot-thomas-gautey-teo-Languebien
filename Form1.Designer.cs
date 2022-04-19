@@ -55,6 +55,14 @@ namespace appli_groupe
             this.billetterie = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.bateauBillet = new System.Windows.Forms.Label();
+            this.dateDB = new System.Windows.Forms.Label();
+            this.lPortArriveeBillet = new System.Windows.Forms.Label();
+            this.nbVBillet = new System.Windows.Forms.Label();
+            this.dureeTrajetBillet = new System.Windows.Forms.Label();
+            this.portDepartBillet = new System.Windows.Forms.Label();
+            this.nbPBillet = new System.Windows.Forms.Label();
+            this.lClient = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
@@ -68,7 +76,7 @@ namespace appli_groupe
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpBillet = new System.Windows.Forms.DateTimePicker();
             this.label18 = new System.Windows.Forms.Label();
             this.reservationTraverseePortArrivee = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -107,6 +115,7 @@ namespace appli_groupe
             this.selectionBateauxCreation = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.rechercheTraversee = new System.Windows.Forms.GroupBox();
+            this.recherche = new System.Windows.Forms.Button();
             this.dtpTraversée = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.selectionPortsArriveeRecherche = new System.Windows.Forms.ComboBox();
@@ -137,7 +146,6 @@ namespace appli_groupe
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.recherche = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvB)).BeginInit();
             this.info.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -462,6 +470,14 @@ namespace appli_groupe
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.bateauBillet);
+            this.groupBox6.Controls.Add(this.dateDB);
+            this.groupBox6.Controls.Add(this.lPortArriveeBillet);
+            this.groupBox6.Controls.Add(this.nbVBillet);
+            this.groupBox6.Controls.Add(this.dureeTrajetBillet);
+            this.groupBox6.Controls.Add(this.portDepartBillet);
+            this.groupBox6.Controls.Add(this.nbPBillet);
+            this.groupBox6.Controls.Add(this.lClient);
             this.groupBox6.Controls.Add(this.button2);
             this.groupBox6.Controls.Add(this.label29);
             this.groupBox6.Controls.Add(this.label28);
@@ -479,6 +495,72 @@ namespace appli_groupe
             this.groupBox6.TabIndex = 26;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Votre Commande";
+            this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
+            // 
+            // bateauBillet
+            // 
+            this.bateauBillet.AutoSize = true;
+            this.bateauBillet.Location = new System.Drawing.Point(97, 70);
+            this.bateauBillet.Name = "bateauBillet";
+            this.bateauBillet.Size = new System.Drawing.Size(0, 15);
+            this.bateauBillet.TabIndex = 16;
+            // 
+            // dateDB
+            // 
+            this.dateDB.AutoSize = true;
+            this.dateDB.Location = new System.Drawing.Point(115, 44);
+            this.dateDB.Name = "dateDB";
+            this.dateDB.Size = new System.Drawing.Size(0, 15);
+            this.dateDB.TabIndex = 15;
+            // 
+            // lPortArriveeBillet
+            // 
+            this.lPortArriveeBillet.AutoSize = true;
+            this.lPortArriveeBillet.Location = new System.Drawing.Point(672, 44);
+            this.lPortArriveeBillet.Name = "lPortArriveeBillet";
+            this.lPortArriveeBillet.Size = new System.Drawing.Size(44, 15);
+            this.lPortArriveeBillet.TabIndex = 14;
+            this.lPortArriveeBillet.Text = "label34";
+            // 
+            // nbVBillet
+            // 
+            this.nbVBillet.AutoSize = true;
+            this.nbVBillet.Location = new System.Drawing.Point(672, 18);
+            this.nbVBillet.Name = "nbVBillet";
+            this.nbVBillet.Size = new System.Drawing.Size(0, 15);
+            this.nbVBillet.TabIndex = 13;
+            // 
+            // dureeTrajetBillet
+            // 
+            this.dureeTrajetBillet.AutoSize = true;
+            this.dureeTrajetBillet.Location = new System.Drawing.Point(399, 70);
+            this.dureeTrajetBillet.Name = "dureeTrajetBillet";
+            this.dureeTrajetBillet.Size = new System.Drawing.Size(0, 15);
+            this.dureeTrajetBillet.TabIndex = 12;
+            // 
+            // portDepartBillet
+            // 
+            this.portDepartBillet.AutoSize = true;
+            this.portDepartBillet.Location = new System.Drawing.Point(399, 44);
+            this.portDepartBillet.Name = "portDepartBillet";
+            this.portDepartBillet.Size = new System.Drawing.Size(0, 15);
+            this.portDepartBillet.TabIndex = 11;
+            // 
+            // nbPBillet
+            // 
+            this.nbPBillet.AutoSize = true;
+            this.nbPBillet.Location = new System.Drawing.Point(399, 17);
+            this.nbPBillet.Name = "nbPBillet";
+            this.nbPBillet.Size = new System.Drawing.Size(0, 15);
+            this.nbPBillet.TabIndex = 10;
+            // 
+            // lClient
+            // 
+            this.lClient.AutoSize = true;
+            this.lClient.Location = new System.Drawing.Point(62, 18);
+            this.lClient.Name = "lClient";
+            this.lClient.Size = new System.Drawing.Size(0, 15);
+            this.lClient.TabIndex = 9;
             // 
             // button2
             // 
@@ -489,6 +571,7 @@ namespace appli_groupe
             this.button2.TabIndex = 8;
             this.button2.Text = "Annuler la Commande";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label29
             // 
@@ -595,7 +678,7 @@ namespace appli_groupe
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.dateTimePicker2);
+            this.groupBox4.Controls.Add(this.dtpBillet);
             this.groupBox4.Controls.Add(this.label18);
             this.groupBox4.Controls.Add(this.reservationTraverseePortArrivee);
             this.groupBox4.Controls.Add(this.label19);
@@ -610,13 +693,13 @@ namespace appli_groupe
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Séléctionnez une Traversée";
             // 
-            // dateTimePicker2
+            // dtpBillet
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(690, 20);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(219, 23);
-            this.dateTimePicker2.TabIndex = 10;
+            this.dtpBillet.Location = new System.Drawing.Point(690, 20);
+            this.dtpBillet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtpBillet.Name = "dtpBillet";
+            this.dtpBillet.Size = new System.Drawing.Size(219, 23);
+            this.dtpBillet.TabIndex = 10;
             // 
             // label18
             // 
@@ -736,6 +819,7 @@ namespace appli_groupe
             this.button1.TabIndex = 23;
             this.button1.Text = "Réserver";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label16
             // 
@@ -975,6 +1059,16 @@ namespace appli_groupe
             this.rechercheTraversee.TabStop = false;
             this.rechercheTraversee.Text = "Rechercher une Traversée";
             this.rechercheTraversee.Enter += new System.EventHandler(this.rechercheTraversee_Enter);
+            // 
+            // recherche
+            // 
+            this.recherche.Location = new System.Drawing.Point(806, 18);
+            this.recherche.Name = "recherche";
+            this.recherche.Size = new System.Drawing.Size(75, 23);
+            this.recherche.TabIndex = 11;
+            this.recherche.Text = "recherche";
+            this.recherche.UseVisualStyleBackColor = true;
+            this.recherche.Click += new System.EventHandler(this.recherche_Click);
             // 
             // dtpTraversée
             // 
@@ -1224,16 +1318,6 @@ namespace appli_groupe
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.Width = 125;
             // 
-            // recherche
-            // 
-            this.recherche.Location = new System.Drawing.Point(806, 18);
-            this.recherche.Name = "recherche";
-            this.recherche.Size = new System.Drawing.Size(75, 23);
-            this.recherche.TabIndex = 11;
-            this.recherche.Text = "recherche";
-            this.recherche.UseVisualStyleBackColor = true;
-            this.recherche.Click += new System.EventHandler(this.recherche_Click);
-            // 
             // cbbateau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1356,7 +1440,7 @@ namespace appli_groupe
         private System.Windows.Forms.TextBox reservationNbPassagers;
         private System.Windows.Forms.TextBox reservationNbVehicules;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpBillet;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.ComboBox reservationTraverseePortArrivee;
         private System.Windows.Forms.Label label19;
@@ -1391,6 +1475,14 @@ namespace appli_groupe
         private System.Windows.Forms.DataGridViewTextBoxColumn portDepartCree;
         private System.Windows.Forms.DataGridViewTextBoxColumn portArriveeCree;
         private System.Windows.Forms.Button recherche;
+        private System.Windows.Forms.Label bateauBillet;
+        private System.Windows.Forms.Label dateDB;
+        private System.Windows.Forms.Label lPortArriveeBillet;
+        private System.Windows.Forms.Label nbVBillet;
+        private System.Windows.Forms.Label dureeTrajetBillet;
+        private System.Windows.Forms.Label portDepartBillet;
+        private System.Windows.Forms.Label nbPBillet;
+        private System.Windows.Forms.Label lClient;
     }
 }
 

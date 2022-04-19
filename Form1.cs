@@ -144,6 +144,7 @@ namespace appli_groupe
             bateauchoix = bateauchoix + 1;
             string theDate = dateTraverseeBateau.Value.ToShortDateString();
             ListeBateau.ElementAt(bateauchoix).setDateVisite(DateTime.Parse(dateTraverseeBateau.Text));
+
         }
         private void recherche_Click(object sender, EventArgs e)
         {
@@ -163,6 +164,58 @@ namespace appli_groupe
 
                 }
             }
+
+        }
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            String depart = reservationTraverseePortDepart.Text;
+            String arrivee = reservationTraverseePortArrivee.Text;
+            String date = dtpBillet.Value.ToShortDateString();
+            string bateau="";
+            string num ="";
+            int dureeTrajet= 0;
+
+
+            for (int i = 0; i < ListeTraversees.Count; i++)
+            {
+                String portD = (string)selectionReservationTraversee[6, i].Value;
+                String portA = (string)selectionReservationTraversee[7, i].Value;
+                DateTime portDate = (DateTime)selectionReservationTraversee[1, i].Value;
+
+                if (portD == depart & portA == arrivee & portDate.ToShortDateString() == date)
+                {
+                        num = ListeTraversees.ElementAt(i).getNumerp().ToString();
+                        
+                      dureeTrajet=  ListeTraversees.ElementAt(i).getDuree();
+                    bateau = ListeTraversees.ElementAt(i).getBateau().getNomBateau();
+
+
+
+                }
+            }
+            lClient.Text = num;
+            dateDB.Text = date;
+            bateauBillet.Text = bateau;
+            nbPBillet.Text = reservationNbPassagers.Text;
+            portDepartBillet.Text = depart;
+            dureeTrajetBillet.Text = dureeTrajet.ToString();
+            nbVBillet.Text = reservationNbVehicules.Text;
+            lPortArriveeBillet.Text = arrivee;
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            lClient.Text = "";
+            dateDB.Text = "";
+            bateauBillet.Text = "";
+            nbPBillet.Text = "";
+            portDepartBillet.Text = "";
+            dureeTrajetBillet.Text = "";
+            nbVBillet.Text = "";
+            lPortArriveeBillet.Text = "";
+            reservationNbPassagers.Text = "";
+            reservationNbVehicules.Text = "";
+            reservationPrenom.Text = "";
+            reservationNom.Text = "";
         }
 
         // P O U B E L L E //
@@ -225,6 +278,11 @@ namespace appli_groupe
 
         }
 
-        
+        private void groupBox6_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }
