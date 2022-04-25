@@ -108,7 +108,7 @@ namespace appli_groupe
                 selectionBateauxCreation.Items.Add(ListeBateau[i].getNomBateau().ToString());
             }
             // Ports // 
-            for (int i = 1; i < ListePort.Count; i++)
+            for (int i = 0; i < ListePort.Count; i++)
             {
                 selectionPortsDepartRecherche.Items.Add(ListePort[i].getNomPort().ToString());
                 selectionPortsArriveeRecherche.Items.Add(ListePort[i].getNomPort().ToString());
@@ -193,12 +193,12 @@ namespace appli_groupe
 
                 }
             }
-            lClient.Text = num;
+            lClient.Text = reservationPrenom.Text + " " + reservationNom.Text;
             dateDB.Text = date;
             bateauBillet.Text = bateau;
             nbPBillet.Text = reservationNbPassagers.Text;
             portDepartBillet.Text = depart;
-            dureeTrajetBillet.Text = dureeTrajet.ToString();
+            dureeTrajetBillet.Text = dureeTrajet.ToString() + " Heure(s)";
             nbVBillet.Text = reservationNbVehicules.Text;
             lPortArriveeBillet.Text = arrivee;
         }

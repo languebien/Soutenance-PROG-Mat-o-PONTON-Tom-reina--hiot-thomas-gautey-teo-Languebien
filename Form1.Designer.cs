@@ -178,11 +178,12 @@ namespace appli_groupe
             this.vitesse,
             this.passagers,
             this.voitures});
-            this.dgvB.Location = new System.Drawing.Point(5, 20);
+            this.dgvB.Location = new System.Drawing.Point(6, 27);
+            this.dgvB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvB.Name = "dgvB";
             this.dgvB.RowHeadersWidth = 51;
             this.dgvB.RowTemplate.Height = 25;
-            this.dgvB.Size = new System.Drawing.Size(922, 190);
+            this.dgvB.Size = new System.Drawing.Size(1054, 253);
             this.dgvB.TabIndex = 3;
             // 
             // nom
@@ -230,52 +231,59 @@ namespace appli_groupe
             // selectionModifierBateau
             // 
             this.selectionModifierBateau.FormattingEnabled = true;
-            this.selectionModifierBateau.Location = new System.Drawing.Point(151, 16);
+            this.selectionModifierBateau.Location = new System.Drawing.Point(173, 21);
+            this.selectionModifierBateau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.selectionModifierBateau.Name = "selectionModifierBateau";
-            this.selectionModifierBateau.Size = new System.Drawing.Size(173, 23);
+            this.selectionModifierBateau.Size = new System.Drawing.Size(197, 28);
             this.selectionModifierBateau.TabIndex = 4;
             this.selectionModifierBateau.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // txNom
             // 
-            this.txNom.Location = new System.Drawing.Point(46, 41);
+            this.txNom.Location = new System.Drawing.Point(53, 55);
+            this.txNom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txNom.Name = "txNom";
-            this.txNom.Size = new System.Drawing.Size(278, 23);
+            this.txNom.Size = new System.Drawing.Size(317, 27);
             this.txNom.TabIndex = 5;
             // 
             // txLongeur
             // 
-            this.txLongeur.Location = new System.Drawing.Point(73, 64);
+            this.txLongeur.Location = new System.Drawing.Point(83, 85);
+            this.txLongeur.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txLongeur.Name = "txLongeur";
-            this.txLongeur.Size = new System.Drawing.Size(252, 23);
+            this.txLongeur.Size = new System.Drawing.Size(287, 27);
             this.txLongeur.TabIndex = 6;
             // 
             // txVoiture
             // 
-            this.txVoiture.Location = new System.Drawing.Point(65, 158);
+            this.txVoiture.Location = new System.Drawing.Point(74, 211);
+            this.txVoiture.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txVoiture.Name = "txVoiture";
-            this.txVoiture.Size = new System.Drawing.Size(260, 23);
+            this.txVoiture.Size = new System.Drawing.Size(297, 27);
             this.txVoiture.TabIndex = 7;
             // 
             // txPassager
             // 
-            this.txPassager.Location = new System.Drawing.Point(69, 135);
+            this.txPassager.Location = new System.Drawing.Point(79, 180);
+            this.txPassager.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txPassager.Name = "txPassager";
-            this.txPassager.Size = new System.Drawing.Size(255, 23);
+            this.txPassager.Size = new System.Drawing.Size(291, 27);
             this.txPassager.TabIndex = 8;
             // 
             // txVitesse
             // 
-            this.txVitesse.Location = new System.Drawing.Point(59, 112);
+            this.txVitesse.Location = new System.Drawing.Point(67, 149);
+            this.txVitesse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txVitesse.Name = "txVitesse";
-            this.txVitesse.Size = new System.Drawing.Size(266, 23);
+            this.txVitesse.Size = new System.Drawing.Size(303, 27);
             this.txVitesse.TabIndex = 9;
             // 
             // txLargeur
             // 
-            this.txLargeur.Location = new System.Drawing.Point(69, 88);
+            this.txLargeur.Location = new System.Drawing.Point(79, 117);
+            this.txLargeur.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txLargeur.Name = "txLargeur";
-            this.txLargeur.Size = new System.Drawing.Size(255, 23);
+            this.txLargeur.Size = new System.Drawing.Size(291, 27);
             this.txLargeur.TabIndex = 10;
             // 
             // info
@@ -295,9 +303,11 @@ namespace appli_groupe
             this.info.Controls.Add(this.txVitesse);
             this.info.Controls.Add(this.txLargeur);
             this.info.Controls.Add(this.txLongeur);
-            this.info.Location = new System.Drawing.Point(5, 216);
+            this.info.Location = new System.Drawing.Point(6, 288);
+            this.info.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.info.Name = "info";
-            this.info.Size = new System.Drawing.Size(922, 184);
+            this.info.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.info.Size = new System.Drawing.Size(1054, 245);
             this.info.TabIndex = 11;
             this.info.TabStop = false;
             this.info.Text = "Modifier les Bateaux";
@@ -306,21 +316,18 @@ namespace appli_groupe
             // 
             this.groupBox7.Controls.Add(this.modifierDateTraverseeBateau);
             this.groupBox7.Controls.Add(this.dateTraverseeBateau);
-            this.groupBox7.Location = new System.Drawing.Point(337, 16);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox7.Location = new System.Drawing.Point(385, 21);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox7.Size = new System.Drawing.Size(580, 47);
+            this.groupBox7.Size = new System.Drawing.Size(663, 63);
             this.groupBox7.TabIndex = 23;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Modifier la date de Traversée du Bateau ";
             // 
             // modifierDateTraverseeBateau
             // 
-            this.modifierDateTraverseeBateau.Location = new System.Drawing.Point(225, 17);
-            this.modifierDateTraverseeBateau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.modifierDateTraverseeBateau.Location = new System.Drawing.Point(257, 23);
             this.modifierDateTraverseeBateau.Name = "modifierDateTraverseeBateau";
-            this.modifierDateTraverseeBateau.Size = new System.Drawing.Size(117, 22);
+            this.modifierDateTraverseeBateau.Size = new System.Drawing.Size(134, 29);
             this.modifierDateTraverseeBateau.TabIndex = 22;
             this.modifierDateTraverseeBateau.Text = "Modifier la date";
             this.modifierDateTraverseeBateau.UseVisualStyleBackColor = true;
@@ -328,72 +335,71 @@ namespace appli_groupe
             // 
             // dateTraverseeBateau
             // 
-            this.dateTraverseeBateau.Location = new System.Drawing.Point(5, 19);
-            this.dateTraverseeBateau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTraverseeBateau.Location = new System.Drawing.Point(6, 25);
             this.dateTraverseeBateau.Name = "dateTraverseeBateau";
-            this.dateTraverseeBateau.Size = new System.Drawing.Size(215, 23);
+            this.dateTraverseeBateau.Size = new System.Drawing.Size(245, 27);
             this.dateTraverseeBateau.TabIndex = 21;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(5, 160);
+            this.label8.Location = new System.Drawing.Point(6, 213);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 15);
+            this.label8.Size = new System.Drawing.Size(62, 20);
             this.label8.TabIndex = 18;
             this.label8.Text = "Voitures";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(5, 137);
+            this.label7.Location = new System.Drawing.Point(6, 183);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 15);
+            this.label7.Size = new System.Drawing.Size(72, 20);
             this.label7.TabIndex = 17;
             this.label7.Text = "Passagers";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(5, 114);
+            this.label6.Location = new System.Drawing.Point(6, 152);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 15);
+            this.label6.Size = new System.Drawing.Size(55, 20);
             this.label6.TabIndex = 16;
             this.label6.Text = "Vitesse";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(5, 90);
+            this.label5.Location = new System.Drawing.Point(6, 120);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 15);
+            this.label5.Size = new System.Drawing.Size(67, 20);
             this.label5.TabIndex = 15;
             this.label5.Text = "Largueur";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 66);
+            this.label4.Location = new System.Drawing.Point(6, 88);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 15);
+            this.label4.Size = new System.Drawing.Size(71, 20);
             this.label4.TabIndex = 14;
             this.label4.Text = "Longueur";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(5, 44);
+            this.label3.Location = new System.Drawing.Point(6, 59);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 15);
+            this.label3.Size = new System.Drawing.Size(42, 20);
             this.label3.TabIndex = 13;
             this.label3.Text = "Nom";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(5, 18);
+            this.label2.Location = new System.Drawing.Point(6, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 15);
+            this.label2.Size = new System.Drawing.Size(161, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "Séléctionner un Bateau";
             // 
@@ -401,11 +407,9 @@ namespace appli_groupe
             // 
             this.groupBox1.Controls.Add(this.dgvB);
             this.groupBox1.Controls.Add(this.info);
-            this.groupBox1.Location = new System.Drawing.Point(5, 4);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(6, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(933, 406);
+            this.groupBox1.Size = new System.Drawing.Size(1066, 541);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Gestion des Bateaux";
@@ -414,9 +418,9 @@ namespace appli_groupe
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(10, 7);
+            this.label1.Location = new System.Drawing.Point(11, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 23);
+            this.label1.Size = new System.Drawing.Size(191, 28);
             this.label1.TabIndex = 13;
             this.label1.Text = "Compagnie Océane";
             // 
@@ -425,22 +429,20 @@ namespace appli_groupe
             this.Wrapper.Controls.Add(this.billetterie);
             this.Wrapper.Controls.Add(this.traversees);
             this.Wrapper.Controls.Add(this.bateaux);
-            this.Wrapper.Location = new System.Drawing.Point(10, 30);
-            this.Wrapper.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Wrapper.Location = new System.Drawing.Point(11, 40);
             this.Wrapper.Multiline = true;
             this.Wrapper.Name = "Wrapper";
             this.Wrapper.SelectedIndex = 0;
-            this.Wrapper.Size = new System.Drawing.Size(950, 440);
+            this.Wrapper.Size = new System.Drawing.Size(1086, 587);
             this.Wrapper.TabIndex = 14;
             // 
             // billetterie
             // 
             this.billetterie.Controls.Add(this.groupBox3);
-            this.billetterie.Location = new System.Drawing.Point(4, 24);
-            this.billetterie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.billetterie.Location = new System.Drawing.Point(4, 29);
             this.billetterie.Name = "billetterie";
-            this.billetterie.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.billetterie.Size = new System.Drawing.Size(942, 412);
+            this.billetterie.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.billetterie.Size = new System.Drawing.Size(1078, 554);
             this.billetterie.TabIndex = 1;
             this.billetterie.Text = "Billeterie";
             this.billetterie.UseVisualStyleBackColor = true;
@@ -459,11 +461,9 @@ namespace appli_groupe
             this.groupBox3.Controls.Add(this.Prenom);
             this.groupBox3.Controls.Add(this.reservationPrenom);
             this.groupBox3.Controls.Add(this.reservationNom);
-            this.groupBox3.Location = new System.Drawing.Point(5, 4);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Location = new System.Drawing.Point(6, 5);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(928, 406);
+            this.groupBox3.Size = new System.Drawing.Size(1061, 541);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Réserver un Billet";
@@ -487,11 +487,9 @@ namespace appli_groupe
             this.groupBox6.Controls.Add(this.label24);
             this.groupBox6.Controls.Add(this.label23);
             this.groupBox6.Controls.Add(this.label22);
-            this.groupBox6.Location = new System.Drawing.Point(11, 292);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox6.Location = new System.Drawing.Point(13, 389);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox6.Size = new System.Drawing.Size(908, 109);
+            this.groupBox6.Size = new System.Drawing.Size(1038, 145);
             this.groupBox6.TabIndex = 26;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Votre Commande";
@@ -500,74 +498,73 @@ namespace appli_groupe
             // bateauBillet
             // 
             this.bateauBillet.AutoSize = true;
-            this.bateauBillet.Location = new System.Drawing.Point(97, 70);
+            this.bateauBillet.Location = new System.Drawing.Point(111, 93);
             this.bateauBillet.Name = "bateauBillet";
-            this.bateauBillet.Size = new System.Drawing.Size(0, 15);
+            this.bateauBillet.Size = new System.Drawing.Size(0, 20);
             this.bateauBillet.TabIndex = 16;
             // 
             // dateDB
             // 
             this.dateDB.AutoSize = true;
-            this.dateDB.Location = new System.Drawing.Point(115, 44);
+            this.dateDB.Location = new System.Drawing.Point(131, 59);
             this.dateDB.Name = "dateDB";
-            this.dateDB.Size = new System.Drawing.Size(0, 15);
+            this.dateDB.Size = new System.Drawing.Size(0, 20);
             this.dateDB.TabIndex = 15;
             // 
             // lPortArriveeBillet
             // 
             this.lPortArriveeBillet.AutoSize = true;
-            this.lPortArriveeBillet.Location = new System.Drawing.Point(672, 44);
+            this.lPortArriveeBillet.Location = new System.Drawing.Point(768, 59);
             this.lPortArriveeBillet.Name = "lPortArriveeBillet";
-            this.lPortArriveeBillet.Size = new System.Drawing.Size(44, 15);
+            this.lPortArriveeBillet.Size = new System.Drawing.Size(58, 20);
             this.lPortArriveeBillet.TabIndex = 14;
             this.lPortArriveeBillet.Text = "label34";
             // 
             // nbVBillet
             // 
             this.nbVBillet.AutoSize = true;
-            this.nbVBillet.Location = new System.Drawing.Point(672, 18);
+            this.nbVBillet.Location = new System.Drawing.Point(768, 24);
             this.nbVBillet.Name = "nbVBillet";
-            this.nbVBillet.Size = new System.Drawing.Size(0, 15);
+            this.nbVBillet.Size = new System.Drawing.Size(0, 20);
             this.nbVBillet.TabIndex = 13;
             // 
             // dureeTrajetBillet
             // 
             this.dureeTrajetBillet.AutoSize = true;
-            this.dureeTrajetBillet.Location = new System.Drawing.Point(399, 70);
+            this.dureeTrajetBillet.Location = new System.Drawing.Point(456, 93);
             this.dureeTrajetBillet.Name = "dureeTrajetBillet";
-            this.dureeTrajetBillet.Size = new System.Drawing.Size(0, 15);
+            this.dureeTrajetBillet.Size = new System.Drawing.Size(0, 20);
             this.dureeTrajetBillet.TabIndex = 12;
             // 
             // portDepartBillet
             // 
             this.portDepartBillet.AutoSize = true;
-            this.portDepartBillet.Location = new System.Drawing.Point(399, 44);
+            this.portDepartBillet.Location = new System.Drawing.Point(456, 59);
             this.portDepartBillet.Name = "portDepartBillet";
-            this.portDepartBillet.Size = new System.Drawing.Size(0, 15);
+            this.portDepartBillet.Size = new System.Drawing.Size(0, 20);
             this.portDepartBillet.TabIndex = 11;
             // 
             // nbPBillet
             // 
             this.nbPBillet.AutoSize = true;
-            this.nbPBillet.Location = new System.Drawing.Point(399, 17);
+            this.nbPBillet.Location = new System.Drawing.Point(456, 23);
             this.nbPBillet.Name = "nbPBillet";
-            this.nbPBillet.Size = new System.Drawing.Size(0, 15);
+            this.nbPBillet.Size = new System.Drawing.Size(0, 20);
             this.nbPBillet.TabIndex = 10;
             // 
             // lClient
             // 
             this.lClient.AutoSize = true;
-            this.lClient.Location = new System.Drawing.Point(62, 18);
+            this.lClient.Location = new System.Drawing.Point(71, 24);
             this.lClient.Name = "lClient";
-            this.lClient.Size = new System.Drawing.Size(0, 15);
+            this.lClient.Size = new System.Drawing.Size(0, 20);
             this.lClient.TabIndex = 9;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(748, 82);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(855, 109);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(155, 22);
+            this.button2.Size = new System.Drawing.Size(177, 29);
             this.button2.TabIndex = 8;
             this.button2.Text = "Annuler la Commande";
             this.button2.UseVisualStyleBackColor = true;
@@ -576,72 +573,72 @@ namespace appli_groupe
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(254, 70);
+            this.label29.Location = new System.Drawing.Point(290, 93);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(95, 15);
+            this.label29.Size = new System.Drawing.Size(122, 20);
             this.label29.TabIndex = 7;
             this.label29.Text = "Durée du Trajet : ";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(538, 44);
+            this.label28.Location = new System.Drawing.Point(615, 59);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(88, 15);
+            this.label28.Size = new System.Drawing.Size(109, 20);
             this.label28.TabIndex = 6;
             this.label28.Text = "Port d\'Arrivée : ";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(254, 44);
+            this.label27.Location = new System.Drawing.Point(290, 59);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(92, 15);
+            this.label27.Size = new System.Drawing.Size(117, 20);
             this.label27.TabIndex = 5;
             this.label27.Text = "Port de Départ : ";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(5, 70);
+            this.label26.Location = new System.Drawing.Point(6, 93);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(52, 15);
+            this.label26.Size = new System.Drawing.Size(66, 20);
             this.label26.TabIndex = 4;
             this.label26.Text = "Bateau : ";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(538, 17);
+            this.label25.Location = new System.Drawing.Point(615, 23);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(128, 15);
+            this.label25.Size = new System.Drawing.Size(161, 20);
             this.label25.TabIndex = 3;
             this.label25.Text = "Nombre de Véhicules : ";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(254, 17);
+            this.label24.Location = new System.Drawing.Point(290, 23);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(133, 15);
+            this.label24.Size = new System.Drawing.Size(165, 20);
             this.label24.TabIndex = 2;
             this.label24.Text = "Nombre de Personnes : ";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(5, 44);
+            this.label23.Location = new System.Drawing.Point(6, 59);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(95, 15);
+            this.label23.Size = new System.Drawing.Size(123, 20);
             this.label23.TabIndex = 1;
             this.label23.Text = "Date du Départ : ";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(5, 17);
+            this.label22.Location = new System.Drawing.Point(6, 23);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(47, 15);
+            this.label22.Size = new System.Drawing.Size(58, 20);
             this.label22.TabIndex = 0;
             this.label22.Text = "Client : ";
             // 
@@ -649,11 +646,9 @@ namespace appli_groupe
             // 
             this.groupBox5.Controls.Add(this.label21);
             this.groupBox5.Controls.Add(this.label20);
-            this.groupBox5.Location = new System.Drawing.Point(5, 20);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox5.Location = new System.Drawing.Point(6, 27);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox5.Size = new System.Drawing.Size(903, 62);
+            this.groupBox5.Size = new System.Drawing.Size(1032, 83);
             this.groupBox5.TabIndex = 25;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Tarifs";
@@ -661,18 +656,18 @@ namespace appli_groupe
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(5, 40);
+            this.label21.Location = new System.Drawing.Point(6, 53);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(113, 15);
+            this.label21.Size = new System.Drawing.Size(143, 20);
             this.label21.TabIndex = 1;
             this.label21.Text = "1 Véhicule : 30 Euros";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(5, 17);
+            this.label20.Location = new System.Drawing.Point(6, 23);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(105, 15);
+            this.label20.Size = new System.Drawing.Size(131, 20);
             this.label20.TabIndex = 0;
             this.label20.Text = "1 Persone : 5 Euros";
             // 
@@ -684,55 +679,54 @@ namespace appli_groupe
             this.groupBox4.Controls.Add(this.label19);
             this.groupBox4.Controls.Add(this.reservationTraverseePortDepart);
             this.groupBox4.Controls.Add(this.selectionReservationTraversee);
-            this.groupBox4.Location = new System.Drawing.Point(5, 86);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Location = new System.Drawing.Point(6, 115);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Size = new System.Drawing.Size(914, 153);
+            this.groupBox4.Size = new System.Drawing.Size(1045, 204);
             this.groupBox4.TabIndex = 24;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Séléctionnez une Traversée";
             // 
             // dtpBillet
             // 
-            this.dtpBillet.Location = new System.Drawing.Point(690, 20);
-            this.dtpBillet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtpBillet.Location = new System.Drawing.Point(789, 27);
             this.dtpBillet.Name = "dtpBillet";
-            this.dtpBillet.Size = new System.Drawing.Size(219, 23);
+            this.dtpBillet.Size = new System.Drawing.Size(250, 27);
             this.dtpBillet.TabIndex = 10;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(353, 21);
+            this.label18.Location = new System.Drawing.Point(403, 28);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(79, 15);
+            this.label18.Size = new System.Drawing.Size(98, 20);
             this.label18.TabIndex = 9;
             this.label18.Text = "Port d\'Arrivée";
             // 
             // reservationTraverseePortArrivee
             // 
             this.reservationTraverseePortArrivee.FormattingEnabled = true;
-            this.reservationTraverseePortArrivee.Location = new System.Drawing.Point(444, 19);
+            this.reservationTraverseePortArrivee.Location = new System.Drawing.Point(507, 25);
+            this.reservationTraverseePortArrivee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.reservationTraverseePortArrivee.Name = "reservationTraverseePortArrivee";
-            this.reservationTraverseePortArrivee.Size = new System.Drawing.Size(173, 23);
+            this.reservationTraverseePortArrivee.Size = new System.Drawing.Size(197, 28);
             this.reservationTraverseePortArrivee.TabIndex = 8;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(5, 21);
+            this.label19.Location = new System.Drawing.Point(6, 28);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(83, 15);
+            this.label19.Size = new System.Drawing.Size(106, 20);
             this.label19.TabIndex = 7;
             this.label19.Text = "Port de Départ";
             // 
             // reservationTraverseePortDepart
             // 
             this.reservationTraverseePortDepart.FormattingEnabled = true;
-            this.reservationTraverseePortDepart.Location = new System.Drawing.Point(103, 19);
+            this.reservationTraverseePortDepart.Location = new System.Drawing.Point(118, 25);
+            this.reservationTraverseePortDepart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.reservationTraverseePortDepart.Name = "reservationTraverseePortDepart";
-            this.reservationTraverseePortDepart.Size = new System.Drawing.Size(173, 23);
+            this.reservationTraverseePortDepart.Size = new System.Drawing.Size(197, 28);
             this.reservationTraverseePortDepart.TabIndex = 6;
             // 
             // selectionReservationTraversee
@@ -747,11 +741,12 @@ namespace appli_groupe
             this.dataGridViewTextBoxColumn20,
             this.dataGridViewTextBoxColumn21,
             this.dataGridViewTextBoxColumn22});
-            this.selectionReservationTraversee.Location = new System.Drawing.Point(5, 46);
+            this.selectionReservationTraversee.Location = new System.Drawing.Point(6, 61);
+            this.selectionReservationTraversee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.selectionReservationTraversee.Name = "selectionReservationTraversee";
             this.selectionReservationTraversee.RowHeadersWidth = 51;
             this.selectionReservationTraversee.RowTemplate.Height = 25;
-            this.selectionReservationTraversee.Size = new System.Drawing.Size(904, 99);
+            this.selectionReservationTraversee.Size = new System.Drawing.Size(1033, 132);
             this.selectionReservationTraversee.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn15
@@ -812,10 +807,9 @@ namespace appli_groupe
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(801, 244);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(915, 325);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 44);
+            this.button1.Size = new System.Drawing.Size(136, 59);
             this.button1.TabIndex = 23;
             this.button1.Text = "Réserver";
             this.button1.UseVisualStyleBackColor = true;
@@ -824,75 +818,78 @@ namespace appli_groupe
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(392, 269);
+            this.label16.Location = new System.Drawing.Point(448, 359);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(119, 15);
+            this.label16.Size = new System.Drawing.Size(150, 20);
             this.label16.TabIndex = 22;
             this.label16.Text = "Nombre de Véhicules";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(392, 247);
+            this.label17.Location = new System.Drawing.Point(448, 329);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(121, 15);
+            this.label17.Size = new System.Drawing.Size(152, 20);
             this.label17.TabIndex = 21;
             this.label17.Text = "Nombre de Passagers";
             // 
             // reservationNbPassagers
             // 
-            this.reservationNbPassagers.Location = new System.Drawing.Point(530, 244);
+            this.reservationNbPassagers.Location = new System.Drawing.Point(606, 325);
+            this.reservationNbPassagers.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.reservationNbPassagers.Name = "reservationNbPassagers";
-            this.reservationNbPassagers.Size = new System.Drawing.Size(60, 23);
+            this.reservationNbPassagers.Size = new System.Drawing.Size(68, 27);
             this.reservationNbPassagers.TabIndex = 19;
             // 
             // reservationNbVehicules
             // 
-            this.reservationNbVehicules.Location = new System.Drawing.Point(530, 267);
+            this.reservationNbVehicules.Location = new System.Drawing.Point(606, 356);
+            this.reservationNbVehicules.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.reservationNbVehicules.Name = "reservationNbVehicules";
-            this.reservationNbVehicules.Size = new System.Drawing.Size(60, 23);
+            this.reservationNbVehicules.Size = new System.Drawing.Size(68, 27);
             this.reservationNbVehicules.TabIndex = 20;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(11, 269);
+            this.label15.Location = new System.Drawing.Point(13, 359);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(34, 15);
+            this.label15.Size = new System.Drawing.Size(42, 20);
             this.label15.TabIndex = 18;
             this.label15.Text = "Nom";
             // 
             // Prenom
             // 
             this.Prenom.AutoSize = true;
-            this.Prenom.Location = new System.Drawing.Point(11, 247);
+            this.Prenom.Location = new System.Drawing.Point(13, 329);
             this.Prenom.Name = "Prenom";
-            this.Prenom.Size = new System.Drawing.Size(49, 15);
+            this.Prenom.Size = new System.Drawing.Size(60, 20);
             this.Prenom.TabIndex = 17;
             this.Prenom.Text = "Prénom";
             // 
             // reservationPrenom
             // 
-            this.reservationPrenom.Location = new System.Drawing.Point(69, 244);
+            this.reservationPrenom.Location = new System.Drawing.Point(79, 325);
+            this.reservationPrenom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.reservationPrenom.Name = "reservationPrenom";
-            this.reservationPrenom.Size = new System.Drawing.Size(288, 23);
+            this.reservationPrenom.Size = new System.Drawing.Size(329, 27);
             this.reservationPrenom.TabIndex = 15;
             // 
             // reservationNom
             // 
-            this.reservationNom.Location = new System.Drawing.Point(53, 267);
+            this.reservationNom.Location = new System.Drawing.Point(61, 356);
+            this.reservationNom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.reservationNom.Name = "reservationNom";
-            this.reservationNom.Size = new System.Drawing.Size(303, 23);
+            this.reservationNom.Size = new System.Drawing.Size(346, 27);
             this.reservationNom.TabIndex = 16;
             // 
             // traversees
             // 
             this.traversees.Controls.Add(this.traverseesGestion);
-            this.traversees.Location = new System.Drawing.Point(4, 24);
-            this.traversees.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.traversees.Location = new System.Drawing.Point(4, 29);
             this.traversees.Name = "traversees";
-            this.traversees.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.traversees.Size = new System.Drawing.Size(942, 412);
+            this.traversees.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.traversees.Size = new System.Drawing.Size(1078, 554);
             this.traversees.TabIndex = 2;
             this.traversees.Text = "Traversées";
             this.traversees.UseVisualStyleBackColor = true;
@@ -902,11 +899,9 @@ namespace appli_groupe
             this.traverseesGestion.Controls.Add(this.groupBox2);
             this.traverseesGestion.Controls.Add(this.rechercheTraversee);
             this.traverseesGestion.Controls.Add(this.affichageTraversees);
-            this.traverseesGestion.Location = new System.Drawing.Point(5, 4);
-            this.traverseesGestion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.traverseesGestion.Location = new System.Drawing.Point(6, 5);
             this.traverseesGestion.Name = "traverseesGestion";
-            this.traverseesGestion.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.traverseesGestion.Size = new System.Drawing.Size(928, 406);
+            this.traverseesGestion.Size = new System.Drawing.Size(1061, 541);
             this.traverseesGestion.TabIndex = 13;
             this.traverseesGestion.TabStop = false;
             this.traverseesGestion.Text = "Gestion des Traversées";
@@ -921,11 +916,9 @@ namespace appli_groupe
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.selectionBateauxCreation);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Location = new System.Drawing.Point(5, 284);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Location = new System.Drawing.Point(6, 379);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(914, 117);
+            this.groupBox2.Size = new System.Drawing.Size(1045, 156);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Créer une Traversée";
@@ -933,11 +926,9 @@ namespace appli_groupe
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.visuTraverseeCree);
-            this.groupBox8.Location = new System.Drawing.Point(458, 16);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox8.Location = new System.Drawing.Point(523, 21);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox8.Size = new System.Drawing.Size(452, 94);
+            this.groupBox8.Size = new System.Drawing.Size(517, 125);
             this.groupBox8.TabIndex = 26;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Traversées Crées";
@@ -949,11 +940,12 @@ namespace appli_groupe
             this.bateauCree,
             this.portDepartCree,
             this.portArriveeCree});
-            this.visuTraverseeCree.Location = new System.Drawing.Point(11, 21);
+            this.visuTraverseeCree.Location = new System.Drawing.Point(13, 28);
+            this.visuTraverseeCree.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.visuTraverseeCree.Name = "visuTraverseeCree";
             this.visuTraverseeCree.RowHeadersWidth = 51;
             this.visuTraverseeCree.RowTemplate.Height = 25;
-            this.visuTraverseeCree.Size = new System.Drawing.Size(435, 59);
+            this.visuTraverseeCree.Size = new System.Drawing.Size(497, 79);
             this.visuTraverseeCree.TabIndex = 25;
             // 
             // bateauCree
@@ -979,10 +971,9 @@ namespace appli_groupe
             // 
             // boutonCreationTraversee
             // 
-            this.boutonCreationTraversee.Location = new System.Drawing.Point(370, 40);
-            this.boutonCreationTraversee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.boutonCreationTraversee.Location = new System.Drawing.Point(423, 53);
             this.boutonCreationTraversee.Name = "boutonCreationTraversee";
-            this.boutonCreationTraversee.Size = new System.Drawing.Size(82, 40);
+            this.boutonCreationTraversee.Size = new System.Drawing.Size(94, 53);
             this.boutonCreationTraversee.TabIndex = 21;
             this.boutonCreationTraversee.Text = "Créer";
             this.boutonCreationTraversee.UseVisualStyleBackColor = true;
@@ -991,53 +982,56 @@ namespace appli_groupe
             // selectionPortsArriveeCreation
             // 
             this.selectionPortsArriveeCreation.FormattingEnabled = true;
-            this.selectionPortsArriveeCreation.Location = new System.Drawing.Point(186, 79);
+            this.selectionPortsArriveeCreation.Location = new System.Drawing.Point(213, 105);
+            this.selectionPortsArriveeCreation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.selectionPortsArriveeCreation.Name = "selectionPortsArriveeCreation";
-            this.selectionPortsArriveeCreation.Size = new System.Drawing.Size(180, 23);
+            this.selectionPortsArriveeCreation.Size = new System.Drawing.Size(205, 28);
             this.selectionPortsArriveeCreation.TabIndex = 20;
             this.selectionPortsArriveeCreation.SelectedIndexChanged += new System.EventHandler(this.selectionPortsArriveeCreation_SelectedIndexChanged);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(5, 81);
+            this.label14.Location = new System.Drawing.Point(6, 108);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(159, 15);
+            this.label14.Size = new System.Drawing.Size(200, 20);
             this.label14.TabIndex = 19;
             this.label14.Text = "Séléctionner le Port d\'Arrivée";
             // 
             // selectionPortsDepartCreation
             // 
             this.selectionPortsDepartCreation.FormattingEnabled = true;
-            this.selectionPortsDepartCreation.Location = new System.Drawing.Point(192, 50);
+            this.selectionPortsDepartCreation.Location = new System.Drawing.Point(219, 67);
+            this.selectionPortsDepartCreation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.selectionPortsDepartCreation.Name = "selectionPortsDepartCreation";
-            this.selectionPortsDepartCreation.Size = new System.Drawing.Size(173, 23);
+            this.selectionPortsDepartCreation.Size = new System.Drawing.Size(197, 28);
             this.selectionPortsDepartCreation.TabIndex = 18;
             this.selectionPortsDepartCreation.SelectedIndexChanged += new System.EventHandler(this.selectionPortsDepartCreation_SelectedIndexChanged);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(5, 52);
+            this.label13.Location = new System.Drawing.Point(6, 69);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(163, 15);
+            this.label13.Size = new System.Drawing.Size(208, 20);
             this.label13.TabIndex = 17;
             this.label13.Text = "Séléctionner le Port de Départ";
             // 
             // selectionBateauxCreation
             // 
             this.selectionBateauxCreation.FormattingEnabled = true;
-            this.selectionBateauxCreation.Location = new System.Drawing.Point(148, 22);
+            this.selectionBateauxCreation.Location = new System.Drawing.Point(169, 29);
+            this.selectionBateauxCreation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.selectionBateauxCreation.Name = "selectionBateauxCreation";
-            this.selectionBateauxCreation.Size = new System.Drawing.Size(218, 23);
+            this.selectionBateauxCreation.Size = new System.Drawing.Size(249, 28);
             this.selectionBateauxCreation.TabIndex = 16;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(5, 25);
+            this.label12.Location = new System.Drawing.Point(6, 33);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(123, 15);
+            this.label12.Size = new System.Drawing.Size(157, 20);
             this.label12.TabIndex = 15;
             this.label12.Text = "Séléctionner le Bateau";
             // 
@@ -1050,11 +1044,9 @@ namespace appli_groupe
             this.rechercheTraversee.Controls.Add(this.label10);
             this.rechercheTraversee.Controls.Add(this.selectionPortsDepartRecherche);
             this.rechercheTraversee.Controls.Add(this.affichageRechercheTraversee);
-            this.rechercheTraversee.Location = new System.Drawing.Point(5, 127);
-            this.rechercheTraversee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rechercheTraversee.Location = new System.Drawing.Point(6, 169);
             this.rechercheTraversee.Name = "rechercheTraversee";
-            this.rechercheTraversee.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rechercheTraversee.Size = new System.Drawing.Size(914, 153);
+            this.rechercheTraversee.Size = new System.Drawing.Size(1045, 204);
             this.rechercheTraversee.TabIndex = 14;
             this.rechercheTraversee.TabStop = false;
             this.rechercheTraversee.Text = "Rechercher une Traversée";
@@ -1062,55 +1054,57 @@ namespace appli_groupe
             // 
             // recherche
             // 
-            this.recherche.Location = new System.Drawing.Point(806, 18);
+            this.recherche.Location = new System.Drawing.Point(907, 23);
+            this.recherche.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.recherche.Name = "recherche";
-            this.recherche.Size = new System.Drawing.Size(75, 23);
+            this.recherche.Size = new System.Drawing.Size(132, 31);
             this.recherche.TabIndex = 11;
-            this.recherche.Text = "recherche";
+            this.recherche.Text = "Recherche";
             this.recherche.UseVisualStyleBackColor = true;
             this.recherche.Click += new System.EventHandler(this.recherche_Click);
             // 
             // dtpTraversée
             // 
-            this.dtpTraversée.Location = new System.Drawing.Point(549, 18);
-            this.dtpTraversée.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtpTraversée.Location = new System.Drawing.Point(651, 25);
             this.dtpTraversée.Name = "dtpTraversée";
-            this.dtpTraversée.Size = new System.Drawing.Size(219, 23);
+            this.dtpTraversée.Size = new System.Drawing.Size(250, 27);
             this.dtpTraversée.TabIndex = 10;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(287, 21);
+            this.label11.Location = new System.Drawing.Point(334, 28);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 15);
+            this.label11.Size = new System.Drawing.Size(98, 20);
             this.label11.TabIndex = 9;
             this.label11.Text = "Port d\'Arrivée";
             // 
             // selectionPortsArriveeRecherche
             // 
             this.selectionPortsArriveeRecherche.FormattingEnabled = true;
-            this.selectionPortsArriveeRecherche.Location = new System.Drawing.Point(370, 18);
+            this.selectionPortsArriveeRecherche.Location = new System.Drawing.Point(438, 24);
+            this.selectionPortsArriveeRecherche.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.selectionPortsArriveeRecherche.Name = "selectionPortsArriveeRecherche";
-            this.selectionPortsArriveeRecherche.Size = new System.Drawing.Size(173, 23);
+            this.selectionPortsArriveeRecherche.Size = new System.Drawing.Size(189, 28);
             this.selectionPortsArriveeRecherche.TabIndex = 8;
             this.selectionPortsArriveeRecherche.SelectedIndexChanged += new System.EventHandler(this.selectionPortsArriveeRecherche_SelectedIndexChanged);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(5, 21);
+            this.label10.Location = new System.Drawing.Point(6, 28);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(83, 15);
+            this.label10.Size = new System.Drawing.Size(106, 20);
             this.label10.TabIndex = 7;
             this.label10.Text = "Port de Départ";
             // 
             // selectionPortsDepartRecherche
             // 
             this.selectionPortsDepartRecherche.FormattingEnabled = true;
-            this.selectionPortsDepartRecherche.Location = new System.Drawing.Point(103, 19);
+            this.selectionPortsDepartRecherche.Location = new System.Drawing.Point(118, 25);
+            this.selectionPortsDepartRecherche.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.selectionPortsDepartRecherche.Name = "selectionPortsDepartRecherche";
-            this.selectionPortsDepartRecherche.Size = new System.Drawing.Size(173, 23);
+            this.selectionPortsDepartRecherche.Size = new System.Drawing.Size(197, 28);
             this.selectionPortsDepartRecherche.TabIndex = 6;
             this.selectionPortsDepartRecherche.SelectedIndexChanged += new System.EventHandler(this.selectionPortsDepartRecherche_SelectedIndexChanged);
             // 
@@ -1126,11 +1120,12 @@ namespace appli_groupe
             this.dataGridViewTextBoxColumn12,
             this.dataGridViewTextBoxColumn13,
             this.dataGridViewTextBoxColumn14});
-            this.affichageRechercheTraversee.Location = new System.Drawing.Point(5, 46);
+            this.affichageRechercheTraversee.Location = new System.Drawing.Point(6, 61);
+            this.affichageRechercheTraversee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.affichageRechercheTraversee.Name = "affichageRechercheTraversee";
             this.affichageRechercheTraversee.RowHeadersWidth = 51;
             this.affichageRechercheTraversee.RowTemplate.Height = 25;
-            this.affichageRechercheTraversee.Size = new System.Drawing.Size(904, 99);
+            this.affichageRechercheTraversee.Size = new System.Drawing.Size(1033, 132);
             this.affichageRechercheTraversee.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn7
@@ -1201,11 +1196,12 @@ namespace appli_groupe
             this.leBateau,
             this.lePortDepart,
             this.lePortArrivee});
-            this.affichageTraversees.Location = new System.Drawing.Point(5, 20);
+            this.affichageTraversees.Location = new System.Drawing.Point(6, 27);
+            this.affichageTraversees.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.affichageTraversees.Name = "affichageTraversees";
             this.affichageTraversees.RowHeadersWidth = 51;
             this.affichageTraversees.RowTemplate.Height = 25;
-            this.affichageTraversees.Size = new System.Drawing.Size(914, 101);
+            this.affichageTraversees.Size = new System.Drawing.Size(1045, 135);
             this.affichageTraversees.TabIndex = 3;
             // 
             // numero
@@ -1267,11 +1263,10 @@ namespace appli_groupe
             // bateaux
             // 
             this.bateaux.Controls.Add(this.groupBox1);
-            this.bateaux.Location = new System.Drawing.Point(4, 24);
-            this.bateaux.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bateaux.Location = new System.Drawing.Point(4, 29);
             this.bateaux.Name = "bateaux";
-            this.bateaux.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bateaux.Size = new System.Drawing.Size(942, 412);
+            this.bateaux.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bateaux.Size = new System.Drawing.Size(1078, 554);
             this.bateaux.TabIndex = 3;
             this.bateaux.Text = "Bateaux";
             this.bateaux.UseVisualStyleBackColor = true;
@@ -1320,12 +1315,11 @@ namespace appli_groupe
             // 
             // cbbateau
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(965, 472);
+            this.ClientSize = new System.Drawing.Size(1103, 629);
             this.Controls.Add(this.Wrapper);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "cbbateau";
             this.Text = "Compagnie Océane";
             this.Load += new System.EventHandler(this.Form1_Load);
