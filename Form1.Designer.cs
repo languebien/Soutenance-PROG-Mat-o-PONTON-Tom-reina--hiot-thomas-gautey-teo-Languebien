@@ -146,6 +146,9 @@ namespace appli_groupe
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pizza = new System.Windows.Forms.Label();
+            this.texteReservationPrix = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvB)).BeginInit();
             this.info.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -441,7 +444,7 @@ namespace appli_groupe
             this.billetterie.Controls.Add(this.groupBox3);
             this.billetterie.Location = new System.Drawing.Point(4, 29);
             this.billetterie.Name = "billetterie";
-            this.billetterie.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.billetterie.Padding = new System.Windows.Forms.Padding(3);
             this.billetterie.Size = new System.Drawing.Size(1078, 554);
             this.billetterie.TabIndex = 1;
             this.billetterie.Text = "Billeterie";
@@ -470,6 +473,9 @@ namespace appli_groupe
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.label52);
+            this.groupBox6.Controls.Add(this.texteReservationPrix);
+            this.groupBox6.Controls.Add(this.pizza);
             this.groupBox6.Controls.Add(this.bateauBillet);
             this.groupBox6.Controls.Add(this.dateDB);
             this.groupBox6.Controls.Add(this.lPortArriveeBillet);
@@ -516,9 +522,8 @@ namespace appli_groupe
             this.lPortArriveeBillet.AutoSize = true;
             this.lPortArriveeBillet.Location = new System.Drawing.Point(768, 59);
             this.lPortArriveeBillet.Name = "lPortArriveeBillet";
-            this.lPortArriveeBillet.Size = new System.Drawing.Size(58, 20);
+            this.lPortArriveeBillet.Size = new System.Drawing.Size(0, 20);
             this.lPortArriveeBillet.TabIndex = 14;
-            this.lPortArriveeBillet.Text = "label34";
             // 
             // nbVBillet
             // 
@@ -888,7 +893,7 @@ namespace appli_groupe
             this.traversees.Controls.Add(this.traverseesGestion);
             this.traversees.Location = new System.Drawing.Point(4, 29);
             this.traversees.Name = "traversees";
-            this.traversees.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.traversees.Padding = new System.Windows.Forms.Padding(3);
             this.traversees.Size = new System.Drawing.Size(1078, 554);
             this.traversees.TabIndex = 2;
             this.traversees.Text = "Traversées";
@@ -1265,7 +1270,7 @@ namespace appli_groupe
             this.bateaux.Controls.Add(this.groupBox1);
             this.bateaux.Location = new System.Drawing.Point(4, 29);
             this.bateaux.Name = "bateaux";
-            this.bateaux.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bateaux.Padding = new System.Windows.Forms.Padding(3);
             this.bateaux.Size = new System.Drawing.Size(1078, 554);
             this.bateaux.TabIndex = 3;
             this.bateaux.Text = "Bateaux";
@@ -1312,6 +1317,33 @@ namespace appli_groupe
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.Width = 125;
+            // 
+            // pizza
+            // 
+            this.pizza.AutoSize = true;
+            this.pizza.Location = new System.Drawing.Point(615, 93);
+            this.pizza.Name = "pizza";
+            this.pizza.Size = new System.Drawing.Size(44, 20);
+            this.pizza.TabIndex = 17;
+            this.pizza.Text = "Prix : ";
+            // 
+            // texteReservationPrix
+            // 
+            this.texteReservationPrix.AutoSize = true;
+            this.texteReservationPrix.Location = new System.Drawing.Point(665, 93);
+            this.texteReservationPrix.Name = "texteReservationPrix";
+            this.texteReservationPrix.Size = new System.Drawing.Size(17, 20);
+            this.texteReservationPrix.TabIndex = 18;
+            this.texteReservationPrix.Text = "0";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(724, 93);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(45, 20);
+            this.label52.TabIndex = 19;
+            this.label52.Text = "Euros";
             // 
             // cbbateau
             // 
@@ -1477,6 +1509,9 @@ namespace appli_groupe
         private System.Windows.Forms.Label portDepartBillet;
         private System.Windows.Forms.Label nbPBillet;
         private System.Windows.Forms.Label lClient;
+        private System.Windows.Forms.Label texteReservationPrix;
+        private System.Windows.Forms.Label pizza;
+        private System.Windows.Forms.Label label52;
     }
 }
 

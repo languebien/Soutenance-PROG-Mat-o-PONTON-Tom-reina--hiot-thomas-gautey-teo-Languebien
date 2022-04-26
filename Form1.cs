@@ -164,8 +164,9 @@ namespace appli_groupe
 
                 }
             }
-
         }
+
+        // Reservation //
         private void button1_Click_1(object sender, EventArgs e)
         {
             String depart = reservationTraverseePortDepart.Text;
@@ -188,20 +189,31 @@ namespace appli_groupe
                         
                       dureeTrajet=  ListeTraversees.ElementAt(i).getDuree();
                     bateau = ListeTraversees.ElementAt(i).getBateau().getNomBateau();
-
-
-
                 }
             }
             lClient.Text = reservationPrenom.Text + " " + reservationNom.Text;
             dateDB.Text = date;
             bateauBillet.Text = bateau;
-            nbPBillet.Text = reservationNbPassagers.Text;
             portDepartBillet.Text = depart;
             dureeTrajetBillet.Text = dureeTrajet.ToString() + " Heure(s)";
-            nbVBillet.Text = reservationNbVehicules.Text;
             lPortArriveeBillet.Text = arrivee;
+            nbVBillet.Text = reservationNbVehicules.Text;
+            nbPBillet.Text = reservationNbPassagers.Text;
+
+            // Calcul Prix //
+            int NombresPersonnes = Int32.Parse(reservationNbPassagers.Text);
+            int NombreVehicules = Int32.Parse(reservationNbVehicules.Text);
+
+            int PrixTotalPresonnes = NombresPersonnes * 5;
+            int PrixTotalVehicules = NombreVehicules * 30;
+
+            int PrixTotal = PrixTotalVehicules + PrixTotalPresonnes;
+            String PrixTotalText = PrixTotal.ToString();
+
+            texteReservationPrix.Text = PrixTotalText;
         }
+
+        // Annulation de la Réservation //
         private void button2_Click(object sender, EventArgs e)
         {
             lClient.Text = "";
