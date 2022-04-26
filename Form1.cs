@@ -120,6 +120,7 @@ namespace appli_groupe
             }
         }
 
+        // Affiche les informations dans les zones de texte quand un bateau est séléctionné //
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             int bateauchoix = selectionModifierBateau.SelectedIndex;
@@ -138,6 +139,8 @@ namespace appli_groupe
             txVoiture.Enabled = false;
             dateTraverseeBateau.Text = ListeBateau.ElementAt(bateauchoix).getDateVisite().ToString();
         }
+
+        // Change la date de traversée du bateau //
         private void modifierDateTraverseeBateau_Click(object sender, EventArgs e)
         {
             int bateauchoix = selectionModifierBateau.SelectedIndex;
@@ -146,6 +149,8 @@ namespace appli_groupe
             ListeBateau.ElementAt(bateauchoix).setDateVisite(DateTime.Parse(dateTraverseeBateau.Text));
 
         }
+
+        // Page Traversée, recherche une traversée //
         private void recherche_Click(object sender, EventArgs e)
         {
             String depart = selectionPortsDepartRecherche.Text;
@@ -166,7 +171,7 @@ namespace appli_groupe
             }
         }
 
-        // Reservation //
+        // R E S E R V A T I O N - Quand on clique sur le bouton réservation //
         private void button1_Click_1(object sender, EventArgs e)
         {
             String depart = reservationTraverseePortDepart.Text;
@@ -211,9 +216,28 @@ namespace appli_groupe
             String PrixTotalText = PrixTotal.ToString();
 
             texteReservationPrix.Text = PrixTotalText;
+
+            // Envoi des Statistiques des personnes et vehicules //
+            int StatPersonnes = Int32.Parse(reservationNbPassagers.Text);
+            int StatPersonnesPrecedente = Int32.Parse(statPersonnes.Text);
+            int StatTotalPersonnes = StatPersonnesPrecedente + StatPersonnes;
+            statPersonnes.Text = StatTotalPersonnes.ToString();
+
+            int StatVehicules = Int32.Parse(reservationNbVehicules.Text);
+            int StatVehiculesPrecedente = Int32.Parse(statVehicules.Text);
+            int StatTotalVehicules = StatVehiculesPrecedente + StatVehicules;
+            statVehicules.Text = StatTotalVehicules.ToString();
+
+            // chiffre d'affaires //
+            int StatChiffreAffairePrecedent = Int32.Parse(statChiffreAffaire.Text);
+            int StatTChiffreAffaire = StatChiffreAffairePrecedent + PrixTotal;
+            statChiffreAffaire.Text = StatTChiffreAffaire.ToString();
+
+            // Commande Enregistrée //
+            commandeEnregistree.Text = "Commande Enregistrée";
         }
 
-        // Annulation de la Réservation //
+        //  Réservation d'une autre commande //
         private void button2_Click(object sender, EventArgs e)
         {
             lClient.Text = "";
@@ -228,7 +252,11 @@ namespace appli_groupe
             reservationNbVehicules.Text = "";
             reservationPrenom.Text = "";
             reservationNom.Text = "";
+
+            commandeEnregistree.Text = "";
         }
+
+
 
         // P O U B E L L E //
         private void txvisite_TextChanged(object sender, EventArgs e)

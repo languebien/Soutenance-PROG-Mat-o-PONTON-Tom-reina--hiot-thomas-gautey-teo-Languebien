@@ -55,6 +55,10 @@ namespace appli_groupe
             this.billetterie = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.commandeEnregistree = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.texteReservationPrix = new System.Windows.Forms.Label();
+            this.pizza = new System.Windows.Forms.Label();
             this.bateauBillet = new System.Windows.Forms.Label();
             this.dateDB = new System.Windows.Forms.Label();
             this.lPortArriveeBillet = new System.Windows.Forms.Label();
@@ -140,15 +144,22 @@ namespace appli_groupe
             this.lePortDepart = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lePortArrivee = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bateaux = new System.Windows.Forms.TabPage();
+            this.pageStatVentes = new System.Windows.Forms.TabPage();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.statChiffreAffaire = new System.Windows.Forms.Label();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.statVehicules = new System.Windows.Forms.Label();
+            this.statPersonnes = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pizza = new System.Windows.Forms.Label();
-            this.texteReservationPrix = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvB)).BeginInit();
             this.info.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -169,6 +180,9 @@ namespace appli_groupe
             ((System.ComponentModel.ISupportInitialize)(this.affichageRechercheTraversee)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.affichageTraversees)).BeginInit();
             this.bateaux.SuspendLayout();
+            this.pageStatVentes.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvB
@@ -432,6 +446,7 @@ namespace appli_groupe
             this.Wrapper.Controls.Add(this.billetterie);
             this.Wrapper.Controls.Add(this.traversees);
             this.Wrapper.Controls.Add(this.bateaux);
+            this.Wrapper.Controls.Add(this.pageStatVentes);
             this.Wrapper.Location = new System.Drawing.Point(11, 40);
             this.Wrapper.Multiline = true;
             this.Wrapper.Name = "Wrapper";
@@ -473,6 +488,7 @@ namespace appli_groupe
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.commandeEnregistree);
             this.groupBox6.Controls.Add(this.label52);
             this.groupBox6.Controls.Add(this.texteReservationPrix);
             this.groupBox6.Controls.Add(this.pizza);
@@ -500,6 +516,42 @@ namespace appli_groupe
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Votre Commande";
             this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
+            // 
+            // commandeEnregistree
+            // 
+            this.commandeEnregistree.AutoSize = true;
+            this.commandeEnregistree.ForeColor = System.Drawing.Color.Lime;
+            this.commandeEnregistree.Location = new System.Drawing.Point(844, 50);
+            this.commandeEnregistree.Name = "commandeEnregistree";
+            this.commandeEnregistree.Size = new System.Drawing.Size(0, 20);
+            this.commandeEnregistree.TabIndex = 20;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(699, 93);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(45, 20);
+            this.label52.TabIndex = 19;
+            this.label52.Text = "Euros";
+            // 
+            // texteReservationPrix
+            // 
+            this.texteReservationPrix.AutoSize = true;
+            this.texteReservationPrix.Location = new System.Drawing.Point(665, 93);
+            this.texteReservationPrix.Name = "texteReservationPrix";
+            this.texteReservationPrix.Size = new System.Drawing.Size(17, 20);
+            this.texteReservationPrix.TabIndex = 18;
+            this.texteReservationPrix.Text = "0";
+            // 
+            // pizza
+            // 
+            this.pizza.AutoSize = true;
+            this.pizza.Location = new System.Drawing.Point(615, 93);
+            this.pizza.Name = "pizza";
+            this.pizza.Size = new System.Drawing.Size(44, 20);
+            this.pizza.TabIndex = 17;
+            this.pizza.Text = "Prix : ";
             // 
             // bateauBillet
             // 
@@ -536,7 +588,7 @@ namespace appli_groupe
             // dureeTrajetBillet
             // 
             this.dureeTrajetBillet.AutoSize = true;
-            this.dureeTrajetBillet.Location = new System.Drawing.Point(456, 93);
+            this.dureeTrajetBillet.Location = new System.Drawing.Point(418, 93);
             this.dureeTrajetBillet.Name = "dureeTrajetBillet";
             this.dureeTrajetBillet.Size = new System.Drawing.Size(0, 20);
             this.dureeTrajetBillet.TabIndex = 12;
@@ -567,11 +619,11 @@ namespace appli_groupe
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(855, 109);
+            this.button2.Location = new System.Drawing.Point(823, 109);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(177, 29);
+            this.button2.Size = new System.Drawing.Size(209, 29);
             this.button2.TabIndex = 8;
-            this.button2.Text = "Annuler la Commande";
+            this.button2.Text = "Réserver une autre traversée";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -1276,6 +1328,106 @@ namespace appli_groupe
             this.bateaux.Text = "Bateaux";
             this.bateaux.UseVisualStyleBackColor = true;
             // 
+            // pageStatVentes
+            // 
+            this.pageStatVentes.Controls.Add(this.groupBox10);
+            this.pageStatVentes.Controls.Add(this.groupBox9);
+            this.pageStatVentes.Location = new System.Drawing.Point(4, 29);
+            this.pageStatVentes.Name = "pageStatVentes";
+            this.pageStatVentes.Padding = new System.Windows.Forms.Padding(3);
+            this.pageStatVentes.Size = new System.Drawing.Size(1078, 554);
+            this.pageStatVentes.TabIndex = 4;
+            this.pageStatVentes.Text = "Statistiques des Ventes";
+            this.pageStatVentes.UseVisualStyleBackColor = true;
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.label31);
+            this.groupBox10.Controls.Add(this.label32);
+            this.groupBox10.Controls.Add(this.statChiffreAffaire);
+            this.groupBox10.Location = new System.Drawing.Point(6, 105);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(1066, 71);
+            this.groupBox10.TabIndex = 1;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Chiffre d\'affaire total";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(116, 34);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(135, 20);
+            this.label31.TabIndex = 3;
+            this.label31.Text = "Euros de bénéfice !";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(6, 34);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(53, 20);
+            this.label32.TabIndex = 2;
+            this.label32.Text = "Total : ";
+            // 
+            // statChiffreAffaire
+            // 
+            this.statChiffreAffaire.AutoSize = true;
+            this.statChiffreAffaire.Location = new System.Drawing.Point(56, 34);
+            this.statChiffreAffaire.Name = "statChiffreAffaire";
+            this.statChiffreAffaire.Size = new System.Drawing.Size(17, 20);
+            this.statChiffreAffaire.TabIndex = 0;
+            this.statChiffreAffaire.Text = "0";
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.label30);
+            this.groupBox9.Controls.Add(this.label9);
+            this.groupBox9.Controls.Add(this.statVehicules);
+            this.groupBox9.Controls.Add(this.statPersonnes);
+            this.groupBox9.Location = new System.Drawing.Point(6, 6);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(1066, 93);
+            this.groupBox9.TabIndex = 0;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Total des personnes et des emplacements véhicules réservés ";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(56, 65);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(248, 20);
+            this.label30.TabIndex = 3;
+            this.label30.Text = "Emplacements de vehicules réservés";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(56, 34);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(151, 20);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Personnes ont réservé";
+            // 
+            // statVehicules
+            // 
+            this.statVehicules.AutoSize = true;
+            this.statVehicules.Location = new System.Drawing.Point(6, 65);
+            this.statVehicules.Name = "statVehicules";
+            this.statVehicules.Size = new System.Drawing.Size(17, 20);
+            this.statVehicules.TabIndex = 1;
+            this.statVehicules.Text = "0";
+            // 
+            // statPersonnes
+            // 
+            this.statPersonnes.AutoSize = true;
+            this.statPersonnes.Location = new System.Drawing.Point(6, 34);
+            this.statPersonnes.Name = "statPersonnes";
+            this.statPersonnes.Size = new System.Drawing.Size(17, 20);
+            this.statPersonnes.TabIndex = 0;
+            this.statPersonnes.Text = "0";
+            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.HeaderText = "Numero";
@@ -1318,33 +1470,6 @@ namespace appli_groupe
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.Width = 125;
             // 
-            // pizza
-            // 
-            this.pizza.AutoSize = true;
-            this.pizza.Location = new System.Drawing.Point(615, 93);
-            this.pizza.Name = "pizza";
-            this.pizza.Size = new System.Drawing.Size(44, 20);
-            this.pizza.TabIndex = 17;
-            this.pizza.Text = "Prix : ";
-            // 
-            // texteReservationPrix
-            // 
-            this.texteReservationPrix.AutoSize = true;
-            this.texteReservationPrix.Location = new System.Drawing.Point(665, 93);
-            this.texteReservationPrix.Name = "texteReservationPrix";
-            this.texteReservationPrix.Size = new System.Drawing.Size(17, 20);
-            this.texteReservationPrix.TabIndex = 18;
-            this.texteReservationPrix.Text = "0";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(724, 93);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(45, 20);
-            this.label52.TabIndex = 19;
-            this.label52.Text = "Euros";
-            // 
             // cbbateau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -1382,6 +1507,11 @@ namespace appli_groupe
             ((System.ComponentModel.ISupportInitialize)(this.affichageRechercheTraversee)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.affichageTraversees)).EndInit();
             this.bateaux.ResumeLayout(false);
+            this.pageStatVentes.ResumeLayout(false);
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1512,6 +1642,17 @@ namespace appli_groupe
         private System.Windows.Forms.Label texteReservationPrix;
         private System.Windows.Forms.Label pizza;
         private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.TabPage pageStatVentes;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label statChiffreAffaire;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label statVehicules;
+        private System.Windows.Forms.Label statPersonnes;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label commandeEnregistree;
     }
 }
 
